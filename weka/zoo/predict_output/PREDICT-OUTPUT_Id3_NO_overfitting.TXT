@@ -1,0 +1,166 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.FilteredClassifier -F "weka.filters.MultiFilter -F \"weka.filters.unsupervised.attribute.Remove -R 1\" -S 19126008" -S 19126008 -W weka.classifiers.trees.Id3
+Relation:     zoo
+Instances:    100
+Attributes:   18
+              animal-name
+              hair
+              feathers
+              eggs
+              milk
+              airborne
+              aquatic
+              predator
+              toothed
+              backbone
+              breathes
+              venomous
+              fins
+              legs
+              tail
+              domestic
+              catsize
+              class
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+FilteredClassifier using weka.classifiers.trees.Id3  on data filtered through weka.filters.MultiFilter -F "weka.filters.unsupervised.attribute.Remove -R 1" -S -1155941787
+
+Filtered Header
+@relation 'zoo-weka.filters.unsupervised.attribute.Remove-R1-weka.filters.MultiFilter-Fweka.filters.unsupervised.attribute.Remove -R 1-S-1155941787'
+
+@attribute hair {yes,no}
+@attribute feathers {yes,no}
+@attribute eggs {yes,no}
+@attribute milk {yes,no}
+@attribute airborne {yes,no}
+@attribute aquatic {yes,no}
+@attribute predator {yes,no}
+@attribute toothed {yes,no}
+@attribute backbone {yes,no}
+@attribute breathes {yes,no}
+@attribute venomous {yes,no}
+@attribute fins {yes,no}
+@attribute legs {0,2,4,5,6,8}
+@attribute tail {yes,no}
+@attribute domestic {yes,no}
+@attribute catsize {yes,no}
+@attribute class {Mammal,Bird,Reptile,Fish,Amphibian,Bug,Invertebrate}
+
+@data
+
+
+Classifier Model
+Id3
+
+
+legs = 0
+|  fins = yes
+|  |  eggs = yes: Fish
+|  |  eggs = no: Mammal
+|  fins = no
+|  |  toothed = yes: Reptile
+|  |  toothed = no: Invertebrate
+legs = 2
+|  hair = yes: Mammal
+|  hair = no: Bird
+legs = 4
+|  hair = yes: Mammal
+|  hair = no
+|  |  aquatic = yes
+|  |  |  toothed = yes: Amphibian
+|  |  |  toothed = no: Invertebrate
+|  |  aquatic = no: Reptile
+legs = 5: Invertebrate
+legs = 6
+|  aquatic = yes: Invertebrate
+|  aquatic = no: Bug
+legs = 8: Invertebrate
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances          97               97      %
+Incorrectly Classified Instances         2                2      %
+Kappa statistic                          0.9734
+Mean absolute error                      0.0058
+Root mean squared error                  0.076 
+Relative absolute error                  2.6535 %
+Root relative squared error             23.1367 %
+UnClassified Instances                   1                1      %
+Total Number of Instances              100     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  Class
+                 1.000    0.000    1.000      1.000    1.000      Mammal
+                 1.000    0.000    1.000      1.000    1.000      Bird
+                 0.800    0.000    1.000      0.800    0.889      Reptile
+                 1.000    0.000    1.000      1.000    1.000      Fish
+                 1.000    0.021    0.667      1.000    0.800      Amphibian
+                 1.000    0.000    1.000      1.000    1.000      Bug
+                 0.889    0.000    1.000      0.889    0.941      Invertebrate
+Weighted Avg.    0.980    0.001    0.987      0.980    0.981      
+
+
+=== Re-evaluation on test set ===
+
+User supplied test set
+Relation:     zoo_prediction
+Instances:     unknown (yet). Reading incrementally
+Attributes:   18
+
+=== Summary ===
+
+Total Number of Instances                0     
+Ignored Class Unknown Instances                  5     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  Class
+                 ?        ?        ?          ?        ?          Mammal
+                 ?        ?        ?          ?        ?          Bird
+                 ?        ?        ?          ?        ?          Reptile
+                 ?        ?        ?          ?        ?          Fish
+                 ?        ?        ?          ?        ?          Amphibian
+                 ?        ?        ?          ?        ?          Bug
+                 ?        ?        ?          ?        ?          Invertebrate
+Weighted Avg.    ?        ?        ?          ?        ?          
+
+
+=== Re-evaluation on test set ===
+
+User supplied test set
+Relation:     zoo_prediction
+Instances:     unknown (yet). Reading incrementally
+Attributes:   18
+
+=== Predictions on user test set ===
+
+    inst#     actual  predicted error prediction
+        1        1:?   1:Mammal       1 
+        2        1:?     2:Bird       1 
+        3        1:?  3:Reptile       1 
+        4        1:?     4:Fish       1 
+        5        1:? 5:Amphibian       1 
+
+=== Summary ===
+
+Total Number of Instances                0     
+Ignored Class Unknown Instances                  5     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  Class
+                 ?        ?        ?          ?        ?          Mammal
+                 ?        ?        ?          ?        ?          Bird
+                 ?        ?        ?          ?        ?          Reptile
+                 ?        ?        ?          ?        ?          Fish
+                 ?        ?        ?          ?        ?          Amphibian
+                 ?        ?        ?          ?        ?          Bug
+                 ?        ?        ?          ?        ?          Invertebrate
+Weighted Avg.    ?        ?        ?          ?        ?          

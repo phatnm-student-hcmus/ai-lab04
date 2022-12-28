@@ -1,0 +1,199 @@
+% 1. Title: Zoo database
+% 
+% 2. Source Information
+%    -- Creator: Richard Forsyth
+%    -- Donor: Richard S. Forsyth 
+%              8 Grosvenor Avenue
+%              Mapperley Park
+%              Nottingham NG3 5DX
+%              0602-621676
+%    -- Date: 5/15/1990
+%  
+% 3. Past Usage:
+%    -- None known other than what is shown in Forsyth's PC/BEAGLE User's Guide.
+% 
+% 4. Relevant Information:
+%    -- A simple database containing 17 Boolean-valued attributes.  The "type"
+%       attribute appears to be the class attribute.  Here is a breakdown of
+%       which animals are in which type: (I find it unusual that there are
+%       2 instances of "frog" and one of "girl"!)
+% 
+%       Class# Set of animals:
+%       ====== ===============================================================
+%            1 (41) aardvark, antelope, bear, boar, buffalo, calf,
+%                   cavy, cheetah, deer, dolphin, elephant,
+%                   fruitbat, giraffe, girl, goat, gorilla, hamster,
+%                   hare, leopard, lion, lynx, mink, mole, mongoose,
+%                   opossum, oryx, platypus, polecat, pony,
+%                   porpoise, puma, pussycat, raccoon, reindeer,
+%                   seal, sealion, squirrel, vampire, vole, wallaby,wolf
+%            2 (20) chicken, crow, dove, duck, flamingo, gull, hawk,
+%                   kiwi, lark, ostrich, parakeet, penguin, pheasant,
+%                   rhea, skimmer, skua, sparrow, swan, vulture, wren
+%            3 (5)  pitviper, seasnake, slowworm, tortoise, tuatara 
+%            4 (13) bass, carp, catfish, chub, dogfish, haddock,
+%                   herring, pike, piranha, seahorse, sole, stingray, tuna
+%            5 (4)  frog, frog, newt, toad 
+%            6 (8)  flea, gnat, honeybee, housefly, ladybird, moth, termite, wasp
+%            7 (10) clam, crab, crayfish, lobster, octopus,
+%                   scorpion, seawasp, slug, starfish, worm
+% 
+% 5. Number of Instances: 101
+% 
+% 6. Number of Attributes: 17 + type = 18 (all Boolean valued but 'animal-name' as string and 'legs' attribute as set of values)
+% 
+% 7. Attribute Information: (name of attribute and type of value domain)
+%    1. animal name:      string
+%    2. hair		{yes, no}
+%    3. feathers		{yes, no}
+%    4. eggs		{yes, no}
+%    5. milk		{yes, no}
+%    6. airborne		{yes, no}
+%    7. aquatic		{yes, no}
+%    8. predator		{yes, no}
+%    9. toothed		{yes, no}
+%   10. backbone		{yes, no}
+%   11. breathes		{yes, no}
+%   12. venomous		{yes, no}
+%   13. fins		{yes, no}
+%   14. legs		{0,2,4,5,6,8}
+%   15. tail		{yes, no}
+%   16. domestic		{yes, no}
+%   17. catsize		{yes, no}
+%   18. type		{Mammal, Bird, Reptile, Fish, Amphibian, Bug, Invertebrate}
+% 
+% 8. Missing Attribute Values: None
+% 
+% 9. Class Distribution: Given above
+
+
+@RELATION zoo
+
+@ATTRIBUTE animal-name string
+@ATTRIBUTE hair {yes, no}
+@ATTRIBUTE feathers {yes, no}
+@ATTRIBUTE eggs {yes, no}
+@ATTRIBUTE milk {yes, no}
+@ATTRIBUTE airborne {yes, no}
+@ATTRIBUTE aquatic {yes, no}
+@ATTRIBUTE predator {yes, no}
+@ATTRIBUTE toothed {yes, no}
+@ATTRIBUTE backbone {yes, no}
+@ATTRIBUTE breathes {yes, no}
+@ATTRIBUTE venomous {yes, no}
+@ATTRIBUTE fins {yes, no}
+@ATTRIBUTE legs {0, 2, 4, 5, 6, 8}
+@ATTRIBUTE tail {yes, no}
+@ATTRIBUTE domestic {yes, no}
+@ATTRIBUTE catsize {yes, no}
+@ATTRIBUTE class {Mammal, Bird, Reptile, Fish, Amphibian, Bug, Invertebrate}
+
+@DATA
+
+
+aardvark,yes,no,no,yes,no,no,yes,yes,yes,yes,no,no,4,no,no,yes,Mammal
+antelope,yes,no,no,yes,no,no,no,yes,yes,yes,no,no,4,yes,no,yes,Mammal
+bass,no,no,yes,no,no,yes,yes,yes,yes,no,no,yes,0,yes,no,no,Fish
+bear,yes,no,no,yes,no,no,yes,yes,yes,yes,no,no,4,no,no,yes,Mammal
+boar,yes,no,no,yes,no,no,yes,yes,yes,yes,no,no,4,yes,no,yes,Mammal
+buffalo,yes,no,no,yes,no,no,no,yes,yes,yes,no,no,4,yes,no,yes,Mammal
+calf,yes,no,no,yes,no,no,no,yes,yes,yes,no,no,4,yes,yes,yes,Mammal
+carp,no,no,yes,no,no,yes,no,yes,yes,no,no,yes,0,yes,yes,no,Fish
+catfish,no,no,yes,no,no,yes,yes,yes,yes,no,no,yes,0,yes,no,no,Fish
+cavy,yes,no,no,yes,no,no,no,yes,yes,yes,no,no,4,no,yes,no,Mammal
+cheetah,yes,no,no,yes,no,no,yes,yes,yes,yes,no,no,4,yes,no,yes,Mammal
+chicken,no,yes,yes,no,yes,no,no,no,yes,yes,no,no,2,yes,yes,no,Bird
+chub,no,no,yes,no,no,yes,yes,yes,yes,no,no,yes,0,yes,no,no,Fish
+clam,no,no,yes,no,no,no,yes,no,no,no,no,no,0,no,no,no,Invertebrate
+crab,no,no,yes,no,no,yes,yes,no,no,no,no,no,4,no,no,no,Invertebrate
+crayfish,no,no,yes,no,no,yes,yes,no,no,no,no,no,6,no,no,no,Invertebrate
+crow,no,yes,yes,no,yes,no,yes,no,yes,yes,no,no,2,yes,no,no,Bird
+deer,yes,no,no,yes,no,no,no,yes,yes,yes,no,no,4,yes,no,yes,Mammal
+dogfish,no,no,yes,no,no,yes,yes,yes,yes,no,no,yes,0,yes,no,yes,Fish
+dolphin,no,no,no,yes,no,yes,yes,yes,yes,yes,no,yes,0,yes,no,yes,Mammal
+dove,no,yes,yes,no,yes,no,no,no,yes,yes,no,no,2,yes,yes,no,Bird
+duck,no,yes,yes,no,yes,yes,no,no,yes,yes,no,no,2,yes,no,no,Bird
+elephant,yes,no,no,yes,no,no,no,yes,yes,yes,no,no,4,yes,no,yes,Mammal
+flamingo,no,yes,yes,no,yes,no,no,no,yes,yes,no,no,2,yes,no,yes,Bird
+flea,no,no,yes,no,no,no,no,no,no,yes,no,no,6,no,no,no,Bug
+frog,no,no,yes,no,no,yes,yes,yes,yes,yes,no,no,4,no,no,no,Amphibian
+frog,no,no,yes,no,no,yes,yes,yes,yes,yes,yes,no,4,no,no,no,Amphibian
+fruitbat,yes,no,no,yes,yes,no,no,yes,yes,yes,no,no,2,yes,no,no,Mammal
+giraffe,yes,no,no,yes,no,no,no,yes,yes,yes,no,no,4,yes,no,yes,Mammal
+girl,yes,no,no,yes,no,no,yes,yes,yes,yes,no,no,2,no,yes,yes,Mammal
+gnat,no,no,yes,no,yes,no,no,no,no,yes,no,no,6,no,no,no,Bug
+goat,yes,no,no,yes,no,no,no,yes,yes,yes,no,no,4,yes,yes,yes,Mammal
+gorilla,yes,no,no,yes,no,no,no,yes,yes,yes,no,no,2,no,no,yes,Mammal
+gull,no,yes,yes,no,yes,yes,yes,no,yes,yes,no,no,2,yes,no,no,Bird
+haddock,no,no,yes,no,no,yes,no,yes,yes,no,no,yes,0,yes,no,no,Fish
+hamster,yes,no,no,yes,no,no,no,yes,yes,yes,no,no,4,yes,yes,no,Mammal
+hare,yes,no,no,yes,no,no,no,yes,yes,yes,no,no,4,yes,no,no,Mammal
+hawk,no,yes,yes,no,yes,no,yes,no,yes,yes,no,no,2,yes,no,no,Bird
+herring,no,no,yes,no,no,yes,yes,yes,yes,no,no,yes,0,yes,no,no,Fish
+honeybee,yes,no,yes,no,yes,no,no,no,no,yes,yes,no,6,no,yes,no,Bug
+housefly,yes,no,yes,no,yes,no,no,no,no,yes,no,no,6,no,no,no,Bug
+kiwi,no,yes,yes,no,no,no,yes,no,yes,yes,no,no,2,yes,no,no,Bird
+ladybird,no,no,yes,no,yes,no,yes,no,no,yes,no,no,6,no,no,no,Bug
+lark,no,yes,yes,no,yes,no,no,no,yes,yes,no,no,2,yes,no,no,Bird
+leopard,yes,no,no,yes,no,no,yes,yes,yes,yes,no,no,4,yes,no,yes,Mammal
+lion,yes,no,no,yes,no,no,yes,yes,yes,yes,no,no,4,yes,no,yes,Mammal
+lobster,no,no,yes,no,no,yes,yes,no,no,no,no,no,6,no,no,no,Invertebrate
+lynx,yes,no,no,yes,no,no,yes,yes,yes,yes,no,no,4,yes,no,yes,Mammal
+mink,yes,no,no,yes,no,yes,yes,yes,yes,yes,no,no,4,yes,no,yes,Mammal
+mole,yes,no,no,yes,no,no,yes,yes,yes,yes,no,no,4,yes,no,no,Mammal
+mongoose,yes,no,no,yes,no,no,yes,yes,yes,yes,no,no,4,yes,no,yes,Mammal
+moth,yes,no,yes,no,yes,no,no,no,no,yes,no,no,6,no,no,no,Bug
+newt,no,no,yes,no,no,yes,yes,yes,yes,yes,no,no,4,yes,no,no,Amphibian
+octopus,no,no,yes,no,no,yes,yes,no,no,no,no,no,8,no,no,yes,Invertebrate
+opossum,yes,no,no,yes,no,no,yes,yes,yes,yes,no,no,4,yes,no,no,Mammal
+oryx,yes,no,no,yes,no,no,no,yes,yes,yes,no,no,4,yes,no,yes,Mammal
+ostrich,no,yes,yes,no,no,no,no,no,yes,yes,no,no,2,yes,no,yes,Bird
+parakeet,no,yes,yes,no,yes,no,no,no,yes,yes,no,no,2,yes,yes,no,Bird
+penguin,no,yes,yes,no,no,yes,yes,no,yes,yes,no,no,2,yes,no,yes,Bird
+pheasant,no,yes,yes,no,yes,no,no,no,yes,yes,no,no,2,yes,no,no,Bird
+pike,no,no,yes,no,no,yes,yes,yes,yes,no,no,yes,0,yes,no,yes,Fish
+piranha,no,no,yes,no,no,yes,yes,yes,yes,no,no,yes,0,yes,no,no,Fish
+pitviper,no,no,yes,no,no,no,yes,yes,yes,yes,yes,no,0,yes,no,no,Reptile
+platypus,yes,no,yes,yes,no,yes,yes,no,yes,yes,no,no,4,yes,no,yes,Mammal
+polecat,yes,no,no,yes,no,no,yes,yes,yes,yes,no,no,4,yes,no,yes,Mammal
+pony,yes,no,no,yes,no,no,no,yes,yes,yes,no,no,4,yes,yes,yes,Mammal
+porpoise,no,no,no,yes,no,yes,yes,yes,yes,yes,no,yes,0,yes,no,yes,Mammal
+puma,yes,no,no,yes,no,no,yes,yes,yes,yes,no,no,4,yes,no,yes,Mammal
+pussycat,yes,no,no,yes,no,no,yes,yes,yes,yes,no,no,4,yes,yes,yes,Mammal
+raccoon,yes,no,no,yes,no,no,yes,yes,yes,yes,no,no,4,yes,no,yes,Mammal
+reindeer,yes,no,no,yes,no,no,no,yes,yes,yes,no,no,4,yes,yes,yes,Mammal
+rhea,no,yes,yes,no,no,no,yes,no,yes,yes,no,no,2,yes,no,yes,Bird
+scorpion,no,no,no,no,no,no,yes,no,no,yes,yes,no,8,yes,no,no,Invertebrate
+seahorse,no,no,yes,no,no,yes,no,yes,yes,no,no,yes,0,yes,no,no,Fish
+seal,yes,no,no,yes,no,yes,yes,yes,yes,yes,no,yes,0,no,no,yes,Mammal
+sealion,yes,no,no,yes,no,yes,yes,yes,yes,yes,no,yes,2,yes,no,yes,Mammal
+seasnake,no,no,no,no,no,yes,yes,yes,yes,no,yes,no,0,yes,no,no,Reptile
+seawasp,no,no,yes,no,no,yes,yes,no,no,no,yes,no,0,no,no,no,Invertebrate
+skimmer,no,yes,yes,no,yes,yes,yes,no,yes,yes,no,no,2,yes,no,no,Bird
+skua,no,yes,yes,no,yes,yes,yes,no,yes,yes,no,no,2,yes,no,no,Bird
+slowworm,no,no,yes,no,no,no,yes,yes,yes,yes,no,no,0,yes,no,no,Reptile
+slug,no,no,yes,no,no,no,no,no,no,yes,no,no,0,no,no,no,Invertebrate
+sole,no,no,yes,no,no,yes,no,yes,yes,no,no,yes,0,yes,no,no,Fish
+sparrow,no,yes,yes,no,yes,no,no,no,yes,yes,no,no,2,yes,no,no,Bird
+squirrel,yes,no,no,yes,no,no,no,yes,yes,yes,no,no,2,yes,no,no,Mammal
+starfish,no,no,yes,no,no,yes,yes,no,no,no,no,no,5,no,no,no,Invertebrate
+stingray,no,no,yes,no,no,yes,yes,yes,yes,no,yes,yes,0,yes,no,yes,Fish
+swan,no,yes,yes,no,yes,yes,no,no,yes,yes,no,no,2,yes,no,yes,Bird
+termite,no,no,yes,no,no,no,no,no,no,yes,no,no,6,no,no,no,Bug
+toad,no,no,yes,no,no,yes,no,yes,yes,yes,no,no,4,no,no,no,Amphibian
+tortoise,no,no,yes,no,no,no,no,no,yes,yes,no,no,4,yes,no,yes,Reptile
+tuatara,no,no,yes,no,no,no,yes,yes,yes,yes,no,no,4,yes,no,no,Reptile
+tuna,no,no,yes,no,no,yes,yes,yes,yes,no,no,yes,0,yes,no,yes,Fish
+vampire,yes,no,no,yes,yes,no,no,yes,yes,yes,no,no,2,yes,no,no,Mammal
+vole,yes,no,no,yes,no,no,no,yes,yes,yes,no,no,4,yes,no,no,Mammal
+vulture,no,yes,yes,no,yes,no,yes,no,yes,yes,no,no,2,yes,no,yes,Bird
+wallaby,yes,no,no,yes,no,no,no,yes,yes,yes,no,no,2,yes,no,yes,Mammal
+wasp,yes,no,yes,no,yes,no,no,no,no,yes,yes,no,6,no,no,no,Bug
+wolf,yes,no,no,yes,no,no,yes,yes,yes,yes,no,no,4,yes,no,yes,Mammal
+worm,no,no,yes,no,no,no,no,no,no,yes,no,no,0,no,no,no,Invertebrate
+wren,no,yes,yes,no,yes,no,no,no,yes,yes,no,no,2,yes,no,no,Bird
+
+
+%
+%
+%

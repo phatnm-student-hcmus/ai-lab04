@@ -1,0 +1,28 @@
+@RELATION zoo_prediction
+
+@ATTRIBUTE animal-name string
+@ATTRIBUTE hair {yes, no}
+@ATTRIBUTE feathers {yes, no}
+@ATTRIBUTE eggs {yes, no}
+@ATTRIBUTE milk {yes, no}
+@ATTRIBUTE airborne {yes, no}
+@ATTRIBUTE aquatic {yes, no}
+@ATTRIBUTE predator {yes, no}
+@ATTRIBUTE toothed {yes, no}
+@ATTRIBUTE backbone {yes, no}
+@ATTRIBUTE breathes {yes, no}
+@ATTRIBUTE venomous {yes, no}
+@ATTRIBUTE fins {yes, no}
+@ATTRIBUTE legs {0, 2, 4, 5, 6, 8}
+@ATTRIBUTE tail {yes, no}
+@ATTRIBUTE domestic {yes, no}
+@ATTRIBUTE catsize {yes, no}
+@ATTRIBUTE class {Mammal, Bird, Reptile, Fish, Amphibian, Bug, Invertebrate}
+
+@DATA
+
+NameIsSecret,yes,no,no,yes,no,no,no,yes,yes,yes,no,no,4,yes,no,yes,?
+NameIsSecret,no,yes,yes,no,yes,no,no,no,yes,yes,no,no,2,yes,yes,no,?
+NameIsSecret,no,no,yes,no,no,no,yes,yes,yes,yes,yes,no,0,yes,no,no,?
+NameIsSecret,no,no,yes,no,no,yes,yes,yes,yes,no,no,yes,0,yes,no,no,?
+NameIsSecret,no,no,yes,no,no,yes,yes,yes,yes,yes,no,no,4,yes,no,no,?

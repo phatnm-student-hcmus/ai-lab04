@@ -1,0 +1,185 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.FilteredClassifier -F "weka.filters.MultiFilter -F \"weka.filters.unsupervised.attribute.StringToNominal -R 1\" -F \"weka.filters.unsupervised.attribute.ReplaceMissingValues \" -S 19126008" -S 19126008 -W weka.classifiers.trees.Id3
+Relation:     zoo
+Instances:    100
+Attributes:   18
+              animal-name
+              hair
+              feathers
+              eggs
+              milk
+              airborne
+              aquatic
+              predator
+              toothed
+              backbone
+              breathes
+              venomous
+              fins
+              legs
+              tail
+              domestic
+              catsize
+              class
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+FilteredClassifier using weka.classifiers.trees.Id3  on data filtered through weka.filters.MultiFilter -F "weka.filters.unsupervised.attribute.StringToNominal -R 1" -F "weka.filters.unsupervised.attribute.ReplaceMissingValues " -S -1155941787
+
+Filtered Header
+@relation 'zoo-weka.filters.unsupervised.attribute.StringToNominal-R1-weka.filters.unsupervised.attribute.ReplaceMissingValues-weka.filters.MultiFilter-Fweka.filters.unsupervised.attribute.StringToNominal -R 1-Fweka.filters.unsupervised.attribute.ReplaceMissingValues-S-1155941787'
+
+@attribute animal-name {aardvark,antelope,bass,bear,boar,buffalo,calf,carp,catfish,cavy,cheetah,chicken,chub,clam,crab,crayfish,crow,deer,dogfish,dolphin,dove,duck,elephant,flamingo,flea,frog_1,frog_2,fruitbat,giraffe,gnat,goat,gorilla,gull,haddock,hamster,hare,hawk,herring,honeybee,housefly,kiwi,ladybird,lark,leopard,lion,lobster,lynx,mink,mole,mongoose,moth,newt,octopus,opossum,oryx,ostrich,parakeet,penguin,pheasant,pike,piranha,pitviper,platypus,polecat,pony,porpoise,puma,pussycat,raccoon,reindeer,rhea,scorpion,seahorse,seal,sealion,seasnake,seawasp,skimmer,skua,slowworm,slug,sole,sparrow,squirrel,starfish,stingray,swan,termite,toad,tortoise,tuatara,tuna,vampire,vole,vulture,wallaby,wasp,wolf,worm,wren}
+@attribute hair {yes,no}
+@attribute feathers {yes,no}
+@attribute eggs {yes,no}
+@attribute milk {yes,no}
+@attribute airborne {yes,no}
+@attribute aquatic {yes,no}
+@attribute predator {yes,no}
+@attribute toothed {yes,no}
+@attribute backbone {yes,no}
+@attribute breathes {yes,no}
+@attribute venomous {yes,no}
+@attribute fins {yes,no}
+@attribute legs {0,2,4,5,6,8}
+@attribute tail {yes,no}
+@attribute domestic {yes,no}
+@attribute catsize {yes,no}
+@attribute class {Mammal,Bird,Reptile,Fish,Amphibian,Bug,Invertebrate}
+
+@data
+
+
+Classifier Model
+Id3
+
+
+animal-name = aardvark: Mammal
+animal-name = antelope: Mammal
+animal-name = bass: Fish
+animal-name = bear: Mammal
+animal-name = boar: Mammal
+animal-name = buffalo: Mammal
+animal-name = calf: Mammal
+animal-name = carp: Fish
+animal-name = catfish: Fish
+animal-name = cavy: Mammal
+animal-name = cheetah: Mammal
+animal-name = chicken: Bird
+animal-name = chub: Fish
+animal-name = clam: Invertebrate
+animal-name = crab: Invertebrate
+animal-name = crayfish: Invertebrate
+animal-name = crow: Bird
+animal-name = deer: Mammal
+animal-name = dogfish: Fish
+animal-name = dolphin: Mammal
+animal-name = dove: Bird
+animal-name = duck: Bird
+animal-name = elephant: Mammal
+animal-name = flamingo: Bird
+animal-name = flea: Bug
+animal-name = frog_1: Amphibian
+animal-name = frog_2: Amphibian
+animal-name = fruitbat: Mammal
+animal-name = giraffe: Mammal
+animal-name = gnat: Bug
+animal-name = goat: Mammal
+animal-name = gorilla: Mammal
+animal-name = gull: Bird
+animal-name = haddock: Fish
+animal-name = hamster: Mammal
+animal-name = hare: Mammal
+animal-name = hawk: Bird
+animal-name = herring: Fish
+animal-name = honeybee: Bug
+animal-name = housefly: Bug
+animal-name = kiwi: Bird
+animal-name = ladybird: Bug
+animal-name = lark: Bird
+animal-name = leopard: Mammal
+animal-name = lion: Mammal
+animal-name = lobster: Invertebrate
+animal-name = lynx: Mammal
+animal-name = mink: Mammal
+animal-name = mole: Mammal
+animal-name = mongoose: Mammal
+animal-name = moth: Bug
+animal-name = newt: Amphibian
+animal-name = octopus: Invertebrate
+animal-name = opossum: Mammal
+animal-name = oryx: Mammal
+animal-name = ostrich: Bird
+animal-name = parakeet: Bird
+animal-name = penguin: Bird
+animal-name = pheasant: Bird
+animal-name = pike: Fish
+animal-name = piranha: Fish
+animal-name = pitviper: Reptile
+animal-name = platypus: Mammal
+animal-name = polecat: Mammal
+animal-name = pony: Mammal
+animal-name = porpoise: Mammal
+animal-name = puma: Mammal
+animal-name = pussycat: Mammal
+animal-name = raccoon: Mammal
+animal-name = reindeer: Mammal
+animal-name = rhea: Bird
+animal-name = scorpion: Invertebrate
+animal-name = seahorse: Fish
+animal-name = seal: Mammal
+animal-name = sealion: Mammal
+animal-name = seasnake: Reptile
+animal-name = seawasp: Invertebrate
+animal-name = skimmer: Bird
+animal-name = skua: Bird
+animal-name = slowworm: Reptile
+animal-name = slug: Invertebrate
+animal-name = sole: Fish
+animal-name = sparrow: Bird
+animal-name = squirrel: Mammal
+animal-name = starfish: Invertebrate
+animal-name = stingray: Fish
+animal-name = swan: Bird
+animal-name = termite: Bug
+animal-name = toad: Amphibian
+animal-name = tortoise: Reptile
+animal-name = tuatara: Reptile
+animal-name = tuna: Fish
+animal-name = vampire: Mammal
+animal-name = vole: Mammal
+animal-name = vulture: Bird
+animal-name = wallaby: Mammal
+animal-name = wasp: Bug
+animal-name = wolf: Mammal
+animal-name = worm: Invertebrate
+animal-name = wren: Bird
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances          24               24      %
+Incorrectly Classified Instances        76               76      %
+Kappa statistic                         -0.0066
+Mean absolute error                      0.2171
+Root mean squared error                  0.466 
+Relative absolute error                 98.6617 %
+Root relative squared error            140.9624 %
+Total Number of Instances              100     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  Class
+                 0.400    0.400    0.400      0.400    0.400      Mammal
+                 0.300    0.300    0.200      0.300    0.240      Bird
+                 0.000    0.000    ?          0.000    ?          Reptile
+                 0.077    0.103    0.100      0.077    0.087      Fish
+                 0.000    0.104    0.000      0.000    0.000      Amphibian
+                 0.125    0.098    0.100      0.125    0.111      Bug
+                 0.000    0.000    ?          0.000    ?          Invertebrate
+Weighted Avg.    0.240    0.245    ?          0.240    ? 

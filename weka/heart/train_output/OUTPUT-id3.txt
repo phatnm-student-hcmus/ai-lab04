@@ -1,0 +1,2057 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.FilteredClassifier -F "weka.filters.MultiFilter -F \"weka.filters.unsupervised.attribute.NumericToNominal -R first-last\" -F \"weka.filters.unsupervised.attribute.ReplaceMissingValues \" -S -227789794" -S 19126008 -W weka.classifiers.trees.Id3
+Relation:     heart-weka.filters.unsupervised.attribute.NumericToNominal-Rfirst-last
+Instances:    270
+Attributes:   14
+              age
+              sex
+              chest pain type
+              resting blood pressure
+              serum cholestoral
+              fasting blood sugar
+              resting electrocardiographic
+              maximum heart rate
+              exercise induced angina
+              oldpeak
+              the slope
+              major vessels colored
+              thal
+              class
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+FilteredClassifier using weka.classifiers.trees.Id3  on data filtered through weka.filters.MultiFilter -F "weka.filters.unsupervised.attribute.NumericToNominal -R first-last" -F "weka.filters.unsupervised.attribute.ReplaceMissingValues " -S -227789794
+
+Filtered Header
+@relation 'heart-weka.filters.unsupervised.attribute.NumericToNominal-Rfirst-last-weka.filters.unsupervised.attribute.NumericToNominal-Rfirst-last-weka.filters.unsupervised.attribute.ReplaceMissingValues-weka.filters.MultiFilter-Fweka.filters.unsupervised.attribute.NumericToNominal -R first-last-Fweka.filters.unsupervised.attribute.ReplaceMissingValues-S-227789794'
+
+@attribute age {29,34,35,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,74,76,77}
+@attribute sex {0,1}
+@attribute 'chest pain type' {1,2,3,4}
+@attribute 'resting blood pressure' {94,100,101,102,104,105,106,108,110,112,115,117,118,120,122,123,124,125,126,128,129,130,132,134,135,136,138,140,142,144,145,146,148,150,152,155,156,158,160,165,170,172,174,178,180,192,200}
+@attribute 'serum cholestoral' {126,141,149,160,164,166,167,168,172,174,175,177,178,180,182,183,184,185,186,188,192,193,195,196,197,198,199,200,201,203,204,205,206,207,208,209,210,211,212,213,214,215,216,217,218,219,220,221,222,223,224,225,226,227,228,229,230,231,232,233,234,235,236,237,239,240,242,243,244,245,246,247,248,249,250,252,253,254,255,256,257,258,259,260,261,262,263,264,265,266,267,268,269,270,271,273,274,275,276,277,281,282,283,284,286,288,289,290,293,294,295,298,299,300,302,303,304,305,306,307,308,309,311,313,315,318,319,321,322,325,326,327,330,335,340,341,353,354,360,394,407,409,417,564}
+@attribute 'fasting blood sugar' {0,1}
+@attribute 'resting electrocardiographic' {0,1,2}
+@attribute 'maximum heart rate' {71,88,95,96,97,99,103,105,106,108,109,111,112,113,114,115,116,117,118,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,177,178,179,180,181,182,184,185,186,187,188,190,192,194,195,202}
+@attribute 'exercise induced angina' {0,1}
+@attribute oldpeak {0,0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9,1,1.1,1.2,1.3,1.4,1.5,1.6,1.8,1.9,2,2.1,2.2,2.3,2.4,2.5,2.6,2.8,2.9,3,3.1,3.2,3.4,3.5,3.6,3.8,4,4.2,5.6,6.2}
+@attribute 'the slope' {1,2,3}
+@attribute 'major vessels colored' {0,1,2,3}
+@attribute thal {3,6,7}
+@attribute class {presence,absence}
+
+@data
+
+
+Classifier Model
+Id3
+
+
+serum cholestoral = 126: absence
+serum cholestoral = 141: absence
+serum cholestoral = 149
+|  age = 29: null
+|  age = 34: null
+|  age = 35: null
+|  age = 37: null
+|  age = 38: null
+|  age = 39: null
+|  age = 40: null
+|  age = 41: null
+|  age = 42: null
+|  age = 43: null
+|  age = 44: null
+|  age = 45: null
+|  age = 46: null
+|  age = 47: null
+|  age = 48: null
+|  age = 49: presence
+|  age = 50: null
+|  age = 51: null
+|  age = 52: null
+|  age = 53: null
+|  age = 54: null
+|  age = 55: null
+|  age = 56: null
+|  age = 57: null
+|  age = 58: null
+|  age = 59: null
+|  age = 60: null
+|  age = 61: null
+|  age = 62: null
+|  age = 63: null
+|  age = 64: null
+|  age = 65: null
+|  age = 66: null
+|  age = 67: null
+|  age = 68: null
+|  age = 69: null
+|  age = 70: null
+|  age = 71: absence
+|  age = 74: null
+|  age = 76: null
+|  age = 77: null
+serum cholestoral = 160: absence
+serum cholestoral = 164: presence
+serum cholestoral = 166: presence
+serum cholestoral = 167: presence
+serum cholestoral = 168: absence
+serum cholestoral = 172: presence
+serum cholestoral = 174: presence
+serum cholestoral = 175: absence
+serum cholestoral = 177
+|  age = 29: null
+|  age = 34: null
+|  age = 35: null
+|  age = 37: null
+|  age = 38: null
+|  age = 39: null
+|  age = 40: null
+|  age = 41: null
+|  age = 42: null
+|  age = 43: presence
+|  age = 44: null
+|  age = 45: null
+|  age = 46: absence
+|  age = 47: null
+|  age = 48: null
+|  age = 49: null
+|  age = 50: null
+|  age = 51: null
+|  age = 52: null
+|  age = 53: null
+|  age = 54: null
+|  age = 55: null
+|  age = 56: null
+|  age = 57: null
+|  age = 58: null
+|  age = 59: presence
+|  age = 60: null
+|  age = 61: null
+|  age = 62: null
+|  age = 63: null
+|  age = 64: null
+|  age = 65: absence
+|  age = 66: null
+|  age = 67: null
+|  age = 68: null
+|  age = 69: null
+|  age = 70: null
+|  age = 71: null
+|  age = 74: null
+|  age = 76: null
+|  age = 77: null
+serum cholestoral = 178: absence
+serum cholestoral = 180: absence
+serum cholestoral = 182: absence
+serum cholestoral = 183: absence
+serum cholestoral = 184: presence
+serum cholestoral = 185: presence
+serum cholestoral = 186: absence
+serum cholestoral = 188: presence
+serum cholestoral = 192: absence
+serum cholestoral = 193: absence
+serum cholestoral = 195: absence
+serum cholestoral = 196: absence
+serum cholestoral = 197
+|  age = 29: null
+|  age = 34: null
+|  age = 35: null
+|  age = 37: null
+|  age = 38: null
+|  age = 39: null
+|  age = 40: null
+|  age = 41: null
+|  age = 42: null
+|  age = 43: null
+|  age = 44: presence
+|  age = 45: null
+|  age = 46: absence
+|  age = 47: null
+|  age = 48: null
+|  age = 49: null
+|  age = 50: null
+|  age = 51: null
+|  age = 52: null
+|  age = 53: absence
+|  age = 54: null
+|  age = 55: null
+|  age = 56: null
+|  age = 57: null
+|  age = 58: null
+|  age = 59: null
+|  age = 60: null
+|  age = 61: null
+|  age = 62: null
+|  age = 63: null
+|  age = 64: null
+|  age = 65: null
+|  age = 66: null
+|  age = 67: null
+|  age = 68: null
+|  age = 69: null
+|  age = 70: null
+|  age = 71: null
+|  age = 74: null
+|  age = 76: absence
+|  age = 77: null
+serum cholestoral = 198
+|  age = 29: null
+|  age = 34: null
+|  age = 35: presence
+|  age = 37: null
+|  age = 38: null
+|  age = 39: null
+|  age = 40: null
+|  age = 41: absence
+|  age = 42: null
+|  age = 43: null
+|  age = 44: null
+|  age = 45: null
+|  age = 46: null
+|  age = 47: null
+|  age = 48: null
+|  age = 49: null
+|  age = 50: null
+|  age = 51: null
+|  age = 52: null
+|  age = 53: null
+|  age = 54: null
+|  age = 55: null
+|  age = 56: null
+|  age = 57: null
+|  age = 58: null
+|  age = 59: null
+|  age = 60: null
+|  age = 61: null
+|  age = 62: null
+|  age = 63: null
+|  age = 64: null
+|  age = 65: null
+|  age = 66: null
+|  age = 67: null
+|  age = 68: null
+|  age = 69: null
+|  age = 70: null
+|  age = 71: null
+|  age = 74: null
+|  age = 76: null
+|  age = 77: null
+serum cholestoral = 199: absence
+serum cholestoral = 200: presence
+serum cholestoral = 201: absence
+serum cholestoral = 203
+|  age = 29: null
+|  age = 34: null
+|  age = 35: null
+|  age = 37: null
+|  age = 38: null
+|  age = 39: null
+|  age = 40: null
+|  age = 41: absence
+|  age = 42: null
+|  age = 43: null
+|  age = 44: null
+|  age = 45: null
+|  age = 46: null
+|  age = 47: null
+|  age = 48: null
+|  age = 49: null
+|  age = 50: null
+|  age = 51: null
+|  age = 52: null
+|  age = 53: presence
+|  age = 54: null
+|  age = 55: null
+|  age = 56: null
+|  age = 57: null
+|  age = 58: null
+|  age = 59: null
+|  age = 60: null
+|  age = 61: null
+|  age = 62: null
+|  age = 63: null
+|  age = 64: null
+|  age = 65: null
+|  age = 66: null
+|  age = 67: null
+|  age = 68: null
+|  age = 69: null
+|  age = 70: null
+|  age = 71: null
+|  age = 74: null
+|  age = 76: null
+|  age = 77: null
+serum cholestoral = 204: absence
+serum cholestoral = 205: absence
+serum cholestoral = 206: presence
+serum cholestoral = 207
+|  age = 29: null
+|  age = 34: null
+|  age = 35: null
+|  age = 37: null
+|  age = 38: null
+|  age = 39: null
+|  age = 40: null
+|  age = 41: null
+|  age = 42: null
+|  age = 43: null
+|  age = 44: null
+|  age = 45: null
+|  age = 46: null
+|  age = 47: null
+|  age = 48: null
+|  age = 49: null
+|  age = 50: null
+|  age = 51: null
+|  age = 52: null
+|  age = 53: null
+|  age = 54: null
+|  age = 55: null
+|  age = 56: null
+|  age = 57: absence
+|  age = 58: null
+|  age = 59: null
+|  age = 60: null
+|  age = 61: presence
+|  age = 62: null
+|  age = 63: null
+|  age = 64: null
+|  age = 65: null
+|  age = 66: null
+|  age = 67: null
+|  age = 68: null
+|  age = 69: null
+|  age = 70: null
+|  age = 71: null
+|  age = 74: null
+|  age = 76: null
+|  age = 77: null
+serum cholestoral = 208: absence
+serum cholestoral = 209: absence
+serum cholestoral = 210: absence
+serum cholestoral = 211: absence
+serum cholestoral = 212
+|  age = 29: null
+|  age = 34: null
+|  age = 35: null
+|  age = 37: null
+|  age = 38: null
+|  age = 39: null
+|  age = 40: null
+|  age = 41: null
+|  age = 42: null
+|  age = 43: null
+|  age = 44: null
+|  age = 45: null
+|  age = 46: null
+|  age = 47: null
+|  age = 48: null
+|  age = 49: null
+|  age = 50: null
+|  age = 51: null
+|  age = 52: presence
+|  age = 53: null
+|  age = 54: null
+|  age = 55: null
+|  age = 56: null
+|  age = 57: null
+|  age = 58: null
+|  age = 59: absence
+|  age = 60: null
+|  age = 61: null
+|  age = 62: null
+|  age = 63: null
+|  age = 64: presence
+|  age = 65: null
+|  age = 66: presence
+|  age = 67: null
+|  age = 68: null
+|  age = 69: null
+|  age = 70: null
+|  age = 71: null
+|  age = 74: null
+|  age = 76: null
+|  age = 77: null
+serum cholestoral = 213: absence
+serum cholestoral = 214: absence
+serum cholestoral = 215: absence
+serum cholestoral = 216: presence
+serum cholestoral = 217: presence
+serum cholestoral = 218: presence
+serum cholestoral = 219
+|  age = 29: null
+|  age = 34: null
+|  age = 35: null
+|  age = 37: null
+|  age = 38: null
+|  age = 39: presence
+|  age = 40: null
+|  age = 41: null
+|  age = 42: null
+|  age = 43: null
+|  age = 44: absence
+|  age = 45: null
+|  age = 46: null
+|  age = 47: null
+|  age = 48: null
+|  age = 49: null
+|  age = 50: absence
+|  age = 51: null
+|  age = 52: null
+|  age = 53: null
+|  age = 54: null
+|  age = 55: null
+|  age = 56: null
+|  age = 57: null
+|  age = 58: null
+|  age = 59: null
+|  age = 60: null
+|  age = 61: null
+|  age = 62: null
+|  age = 63: null
+|  age = 64: null
+|  age = 65: null
+|  age = 66: null
+|  age = 67: null
+|  age = 68: null
+|  age = 69: null
+|  age = 70: null
+|  age = 71: null
+|  age = 74: null
+|  age = 76: null
+|  age = 77: null
+serum cholestoral = 220: absence
+serum cholestoral = 221: absence
+serum cholestoral = 222: absence
+serum cholestoral = 223
+|  age = 29: null
+|  age = 34: null
+|  age = 35: null
+|  age = 37: null
+|  age = 38: null
+|  age = 39: null
+|  age = 40: presence
+|  age = 41: null
+|  age = 42: null
+|  age = 43: null
+|  age = 44: null
+|  age = 45: null
+|  age = 46: null
+|  age = 47: null
+|  age = 48: null
+|  age = 49: null
+|  age = 50: null
+|  age = 51: null
+|  age = 52: null
+|  age = 53: null
+|  age = 54: null
+|  age = 55: null
+|  age = 56: null
+|  age = 57: null
+|  age = 58: null
+|  age = 59: null
+|  age = 60: null
+|  age = 61: null
+|  age = 62: null
+|  age = 63: null
+|  age = 64: null
+|  age = 65: null
+|  age = 66: null
+|  age = 67: absence
+|  age = 68: null
+|  age = 69: null
+|  age = 70: null
+|  age = 71: null
+|  age = 74: null
+|  age = 76: null
+|  age = 77: null
+serum cholestoral = 224: presence
+serum cholestoral = 225: presence
+serum cholestoral = 226: absence
+serum cholestoral = 227: absence
+serum cholestoral = 228
+|  sex = 0: presence
+|  sex = 1: absence
+serum cholestoral = 229: presence
+serum cholestoral = 230: presence
+serum cholestoral = 231
+|  age = 29: null
+|  age = 34: null
+|  age = 35: null
+|  age = 37: null
+|  age = 38: presence
+|  age = 39: null
+|  age = 40: null
+|  age = 41: null
+|  age = 42: null
+|  age = 43: null
+|  age = 44: null
+|  age = 45: null
+|  age = 46: presence
+|  age = 47: null
+|  age = 48: null
+|  age = 49: null
+|  age = 50: null
+|  age = 51: null
+|  age = 52: null
+|  age = 53: null
+|  age = 54: null
+|  age = 55: null
+|  age = 56: null
+|  age = 57: null
+|  age = 58: null
+|  age = 59: null
+|  age = 60: null
+|  age = 61: null
+|  age = 62: absence
+|  age = 63: null
+|  age = 64: null
+|  age = 65: null
+|  age = 66: null
+|  age = 67: null
+|  age = 68: null
+|  age = 69: null
+|  age = 70: null
+|  age = 71: null
+|  age = 74: null
+|  age = 76: null
+|  age = 77: null
+serum cholestoral = 232: absence
+serum cholestoral = 233
+|  age = 29: null
+|  age = 34: null
+|  age = 35: null
+|  age = 37: null
+|  age = 38: null
+|  age = 39: null
+|  age = 40: null
+|  age = 41: null
+|  age = 42: null
+|  age = 43: null
+|  age = 44: absence
+|  age = 45: null
+|  age = 46: null
+|  age = 47: null
+|  age = 48: null
+|  age = 49: null
+|  age = 50: presence
+|  age = 51: null
+|  age = 52: absence
+|  age = 53: null
+|  age = 54: null
+|  age = 55: null
+|  age = 56: null
+|  age = 57: null
+|  age = 58: null
+|  age = 59: null
+|  age = 60: null
+|  age = 61: null
+|  age = 62: null
+|  age = 63: absence
+|  age = 64: null
+|  age = 65: null
+|  age = 66: null
+|  age = 67: null
+|  age = 68: null
+|  age = 69: null
+|  age = 70: null
+|  age = 71: null
+|  age = 74: null
+|  age = 76: null
+|  age = 77: null
+serum cholestoral = 234
+|  age = 29: null
+|  age = 34: null
+|  age = 35: null
+|  age = 37: null
+|  age = 38: null
+|  age = 39: null
+|  age = 40: null
+|  age = 41: null
+|  age = 42: null
+|  age = 43: null
+|  age = 44: null
+|  age = 45: absence
+|  age = 46: null
+|  age = 47: null
+|  age = 48: null
+|  age = 49: null
+|  age = 50: null
+|  age = 51: null
+|  age = 52: null
+|  age = 53: absence
+|  age = 54: null
+|  age = 55: null
+|  age = 56: null
+|  age = 57: null
+|  age = 58: presence
+|  age = 59: absence
+|  age = 60: null
+|  age = 61: presence
+|  age = 62: null
+|  age = 63: null
+|  age = 64: null
+|  age = 65: null
+|  age = 66: null
+|  age = 67: null
+|  age = 68: null
+|  age = 69: absence
+|  age = 70: null
+|  age = 71: null
+|  age = 74: null
+|  age = 76: null
+|  age = 77: null
+serum cholestoral = 235: absence
+serum cholestoral = 236: absence
+serum cholestoral = 237: presence
+serum cholestoral = 239
+|  resting blood pressure = 94: null
+|  resting blood pressure = 100: null
+|  resting blood pressure = 101: null
+|  resting blood pressure = 102: null
+|  resting blood pressure = 104: null
+|  resting blood pressure = 105: null
+|  resting blood pressure = 106: null
+|  resting blood pressure = 108: null
+|  resting blood pressure = 110: presence
+|  resting blood pressure = 112: null
+|  resting blood pressure = 115: null
+|  resting blood pressure = 117: null
+|  resting blood pressure = 118: null
+|  resting blood pressure = 120: null
+|  resting blood pressure = 122: null
+|  resting blood pressure = 123: null
+|  resting blood pressure = 124: null
+|  resting blood pressure = 125: null
+|  resting blood pressure = 126: null
+|  resting blood pressure = 128: null
+|  resting blood pressure = 129: null
+|  resting blood pressure = 130: null
+|  resting blood pressure = 132: null
+|  resting blood pressure = 134: null
+|  resting blood pressure = 135: null
+|  resting blood pressure = 136: null
+|  resting blood pressure = 138: null
+|  resting blood pressure = 140: absence
+|  resting blood pressure = 142: null
+|  resting blood pressure = 144: null
+|  resting blood pressure = 145: null
+|  resting blood pressure = 146: null
+|  resting blood pressure = 148: null
+|  resting blood pressure = 150: null
+|  resting blood pressure = 152: null
+|  resting blood pressure = 155: null
+|  resting blood pressure = 156: null
+|  resting blood pressure = 158: null
+|  resting blood pressure = 160: null
+|  resting blood pressure = 165: null
+|  resting blood pressure = 170: null
+|  resting blood pressure = 172: null
+|  resting blood pressure = 174: null
+|  resting blood pressure = 178: null
+|  resting blood pressure = 180: null
+|  resting blood pressure = 192: null
+|  resting blood pressure = 200: null
+serum cholestoral = 240: absence
+serum cholestoral = 242: absence
+serum cholestoral = 243
+|  age = 29: null
+|  age = 34: null
+|  age = 35: null
+|  age = 37: null
+|  age = 38: null
+|  age = 39: null
+|  age = 40: null
+|  age = 41: null
+|  age = 42: null
+|  age = 43: null
+|  age = 44: null
+|  age = 45: null
+|  age = 46: absence
+|  age = 47: presence
+|  age = 48: null
+|  age = 49: null
+|  age = 50: presence
+|  age = 51: null
+|  age = 52: null
+|  age = 53: null
+|  age = 54: null
+|  age = 55: null
+|  age = 56: null
+|  age = 57: null
+|  age = 58: null
+|  age = 59: null
+|  age = 60: null
+|  age = 61: absence
+|  age = 62: null
+|  age = 63: null
+|  age = 64: null
+|  age = 65: null
+|  age = 66: null
+|  age = 67: null
+|  age = 68: null
+|  age = 69: null
+|  age = 70: null
+|  age = 71: null
+|  age = 74: null
+|  age = 76: null
+|  age = 77: null
+serum cholestoral = 244
+|  age = 29: null
+|  age = 34: null
+|  age = 35: null
+|  age = 37: null
+|  age = 38: null
+|  age = 39: null
+|  age = 40: null
+|  age = 41: null
+|  age = 42: absence
+|  age = 43: null
+|  age = 44: null
+|  age = 45: null
+|  age = 46: null
+|  age = 47: null
+|  age = 48: null
+|  age = 49: null
+|  age = 50: absence
+|  age = 51: null
+|  age = 52: null
+|  age = 53: null
+|  age = 54: null
+|  age = 55: null
+|  age = 56: null
+|  age = 57: null
+|  age = 58: null
+|  age = 59: null
+|  age = 60: null
+|  age = 61: null
+|  age = 62: presence
+|  age = 63: null
+|  age = 64: null
+|  age = 65: null
+|  age = 66: null
+|  age = 67: null
+|  age = 68: null
+|  age = 69: null
+|  age = 70: null
+|  age = 71: null
+|  age = 74: null
+|  age = 76: null
+|  age = 77: null
+serum cholestoral = 245: absence
+serum cholestoral = 246
+|  age = 29: null
+|  age = 34: null
+|  age = 35: null
+|  age = 37: null
+|  age = 38: null
+|  age = 39: null
+|  age = 40: null
+|  age = 41: null
+|  age = 42: null
+|  age = 43: null
+|  age = 44: null
+|  age = 45: null
+|  age = 46: null
+|  age = 47: null
+|  age = 48: null
+|  age = 49: null
+|  age = 50: null
+|  age = 51: null
+|  age = 52: null
+|  age = 53: absence
+|  age = 54: null
+|  age = 55: null
+|  age = 56: null
+|  age = 57: null
+|  age = 58: null
+|  age = 59: null
+|  age = 60: null
+|  age = 61: null
+|  age = 62: null
+|  age = 63: null
+|  age = 64: presence
+|  age = 65: null
+|  age = 66: presence
+|  age = 67: null
+|  age = 68: null
+|  age = 69: null
+|  age = 70: null
+|  age = 71: null
+|  age = 74: null
+|  age = 76: null
+|  age = 77: null
+serum cholestoral = 247: absence
+serum cholestoral = 248
+|  age = 29: null
+|  age = 34: null
+|  age = 35: null
+|  age = 37: null
+|  age = 38: null
+|  age = 39: null
+|  age = 40: null
+|  age = 41: null
+|  age = 42: null
+|  age = 43: null
+|  age = 44: null
+|  age = 45: null
+|  age = 46: null
+|  age = 47: null
+|  age = 48: null
+|  age = 49: null
+|  age = 50: null
+|  age = 51: null
+|  age = 52: null
+|  age = 53: null
+|  age = 54: null
+|  age = 55: null
+|  age = 56: null
+|  age = 57: null
+|  age = 58: absence
+|  age = 59: null
+|  age = 60: null
+|  age = 61: null
+|  age = 62: null
+|  age = 63: null
+|  age = 64: null
+|  age = 65: presence
+|  age = 66: null
+|  age = 67: null
+|  age = 68: null
+|  age = 69: null
+|  age = 70: null
+|  age = 71: null
+|  age = 74: null
+|  age = 76: null
+|  age = 77: null
+serum cholestoral = 249: presence
+serum cholestoral = 250: absence
+serum cholestoral = 252: absence
+serum cholestoral = 253: presence
+serum cholestoral = 254
+|  age = 29: null
+|  age = 34: null
+|  age = 35: null
+|  age = 37: null
+|  age = 38: null
+|  age = 39: null
+|  age = 40: null
+|  age = 41: null
+|  age = 42: null
+|  age = 43: null
+|  age = 44: null
+|  age = 45: null
+|  age = 46: null
+|  age = 47: null
+|  age = 48: null
+|  age = 49: null
+|  age = 50: absence
+|  age = 51: null
+|  age = 52: null
+|  age = 53: null
+|  age = 54: null
+|  age = 55: null
+|  age = 56: null
+|  age = 57: null
+|  age = 58: null
+|  age = 59: null
+|  age = 60: null
+|  age = 61: null
+|  age = 62: null
+|  age = 63: presence
+|  age = 64: null
+|  age = 65: presence
+|  age = 66: null
+|  age = 67: presence
+|  age = 68: null
+|  age = 69: presence
+|  age = 70: null
+|  age = 71: null
+|  age = 74: null
+|  age = 76: null
+|  age = 77: null
+serum cholestoral = 255
+|  age = 29: null
+|  age = 34: null
+|  age = 35: null
+|  age = 37: null
+|  age = 38: null
+|  age = 39: null
+|  age = 40: null
+|  age = 41: null
+|  age = 42: null
+|  age = 43: null
+|  age = 44: null
+|  age = 45: null
+|  age = 46: null
+|  age = 47: null
+|  age = 48: absence
+|  age = 49: null
+|  age = 50: null
+|  age = 51: null
+|  age = 52: presence
+|  age = 53: null
+|  age = 54: null
+|  age = 55: null
+|  age = 56: null
+|  age = 57: null
+|  age = 58: null
+|  age = 59: null
+|  age = 60: null
+|  age = 61: null
+|  age = 62: null
+|  age = 63: null
+|  age = 64: null
+|  age = 65: null
+|  age = 66: null
+|  age = 67: null
+|  age = 68: null
+|  age = 69: null
+|  age = 70: null
+|  age = 71: null
+|  age = 74: null
+|  age = 76: null
+|  age = 77: null
+serum cholestoral = 256
+|  age = 29: null
+|  age = 34: null
+|  age = 35: null
+|  age = 37: null
+|  age = 38: null
+|  age = 39: null
+|  age = 40: null
+|  age = 41: null
+|  age = 42: null
+|  age = 43: null
+|  age = 44: null
+|  age = 45: null
+|  age = 46: null
+|  age = 47: null
+|  age = 48: presence
+|  age = 49: null
+|  age = 50: null
+|  age = 51: absence
+|  age = 52: null
+|  age = 53: null
+|  age = 54: null
+|  age = 55: null
+|  age = 56: presence
+|  age = 57: null
+|  age = 58: null
+|  age = 59: null
+|  age = 60: null
+|  age = 61: null
+|  age = 62: null
+|  age = 63: null
+|  age = 64: null
+|  age = 65: null
+|  age = 66: null
+|  age = 67: null
+|  age = 68: null
+|  age = 69: null
+|  age = 70: null
+|  age = 71: null
+|  age = 74: null
+|  age = 76: null
+|  age = 77: null
+serum cholestoral = 257: absence
+serum cholestoral = 258
+|  age = 29: null
+|  age = 34: null
+|  age = 35: null
+|  age = 37: null
+|  age = 38: null
+|  age = 39: null
+|  age = 40: null
+|  age = 41: null
+|  age = 42: null
+|  age = 43: null
+|  age = 44: null
+|  age = 45: null
+|  age = 46: null
+|  age = 47: null
+|  age = 48: null
+|  age = 49: null
+|  age = 50: null
+|  age = 51: null
+|  age = 52: null
+|  age = 53: null
+|  age = 54: absence
+|  age = 55: null
+|  age = 56: null
+|  age = 57: null
+|  age = 58: null
+|  age = 59: null
+|  age = 60: presence
+|  age = 61: null
+|  age = 62: null
+|  age = 63: null
+|  age = 64: null
+|  age = 65: null
+|  age = 66: null
+|  age = 67: null
+|  age = 68: null
+|  age = 69: null
+|  age = 70: null
+|  age = 71: null
+|  age = 74: null
+|  age = 76: null
+|  age = 77: null
+serum cholestoral = 259: presence
+serum cholestoral = 260
+|  age = 29: null
+|  age = 34: null
+|  age = 35: null
+|  age = 37: null
+|  age = 38: null
+|  age = 39: null
+|  age = 40: null
+|  age = 41: null
+|  age = 42: null
+|  age = 43: null
+|  age = 44: null
+|  age = 45: absence
+|  age = 46: null
+|  age = 47: null
+|  age = 48: null
+|  age = 49: null
+|  age = 50: null
+|  age = 51: null
+|  age = 52: null
+|  age = 53: null
+|  age = 54: null
+|  age = 55: null
+|  age = 56: null
+|  age = 57: null
+|  age = 58: null
+|  age = 59: null
+|  age = 60: null
+|  age = 61: presence
+|  age = 62: null
+|  age = 63: null
+|  age = 64: null
+|  age = 65: null
+|  age = 66: null
+|  age = 67: null
+|  age = 68: null
+|  age = 69: null
+|  age = 70: null
+|  age = 71: null
+|  age = 74: null
+|  age = 76: null
+|  age = 77: null
+serum cholestoral = 261
+|  age = 29: null
+|  age = 34: null
+|  age = 35: null
+|  age = 37: null
+|  age = 38: null
+|  age = 39: null
+|  age = 40: null
+|  age = 41: null
+|  age = 42: null
+|  age = 43: null
+|  age = 44: null
+|  age = 45: null
+|  age = 46: null
+|  age = 47: null
+|  age = 48: null
+|  age = 49: null
+|  age = 50: null
+|  age = 51: absence
+|  age = 52: null
+|  age = 53: null
+|  age = 54: null
+|  age = 55: null
+|  age = 56: null
+|  age = 57: presence
+|  age = 58: null
+|  age = 59: null
+|  age = 60: null
+|  age = 61: null
+|  age = 62: null
+|  age = 63: null
+|  age = 64: null
+|  age = 65: null
+|  age = 66: null
+|  age = 67: null
+|  age = 68: null
+|  age = 69: null
+|  age = 70: null
+|  age = 71: null
+|  age = 74: null
+|  age = 76: null
+|  age = 77: null
+serum cholestoral = 262: absence
+serum cholestoral = 263
+|  age = 29: null
+|  age = 34: null
+|  age = 35: null
+|  age = 37: null
+|  age = 38: null
+|  age = 39: null
+|  age = 40: null
+|  age = 41: null
+|  age = 42: null
+|  age = 43: null
+|  age = 44: absence
+|  age = 45: null
+|  age = 46: null
+|  age = 47: null
+|  age = 48: null
+|  age = 49: null
+|  age = 50: null
+|  age = 51: null
+|  age = 52: null
+|  age = 53: null
+|  age = 54: null
+|  age = 55: null
+|  age = 56: null
+|  age = 57: null
+|  age = 58: null
+|  age = 59: null
+|  age = 60: null
+|  age = 61: null
+|  age = 62: presence
+|  age = 63: null
+|  age = 64: absence
+|  age = 65: null
+|  age = 66: null
+|  age = 67: null
+|  age = 68: null
+|  age = 69: null
+|  age = 70: null
+|  age = 71: null
+|  age = 74: null
+|  age = 76: null
+|  age = 77: null
+serum cholestoral = 264: absence
+serum cholestoral = 265: absence
+serum cholestoral = 266
+|  age = 29: null
+|  age = 34: null
+|  age = 35: null
+|  age = 37: null
+|  age = 38: null
+|  age = 39: null
+|  age = 40: null
+|  age = 41: null
+|  age = 42: null
+|  age = 43: null
+|  age = 44: null
+|  age = 45: null
+|  age = 46: null
+|  age = 47: null
+|  age = 48: null
+|  age = 49: absence
+|  age = 50: null
+|  age = 51: null
+|  age = 52: null
+|  age = 53: null
+|  age = 54: presence
+|  age = 55: null
+|  age = 56: null
+|  age = 57: null
+|  age = 58: null
+|  age = 59: null
+|  age = 60: null
+|  age = 61: null
+|  age = 62: null
+|  age = 63: null
+|  age = 64: null
+|  age = 65: null
+|  age = 66: null
+|  age = 67: null
+|  age = 68: null
+|  age = 69: null
+|  age = 70: null
+|  age = 71: null
+|  age = 74: null
+|  age = 76: null
+|  age = 77: null
+serum cholestoral = 267
+|  age = 29: null
+|  age = 34: null
+|  age = 35: null
+|  age = 37: null
+|  age = 38: null
+|  age = 39: null
+|  age = 40: null
+|  age = 41: null
+|  age = 42: null
+|  age = 43: null
+|  age = 44: null
+|  age = 45: null
+|  age = 46: null
+|  age = 47: null
+|  age = 48: null
+|  age = 49: null
+|  age = 50: null
+|  age = 51: null
+|  age = 52: null
+|  age = 53: null
+|  age = 54: absence
+|  age = 55: null
+|  age = 56: null
+|  age = 57: null
+|  age = 58: null
+|  age = 59: null
+|  age = 60: null
+|  age = 61: null
+|  age = 62: presence
+|  age = 63: null
+|  age = 64: null
+|  age = 65: null
+|  age = 66: null
+|  age = 67: null
+|  age = 68: null
+|  age = 69: null
+|  age = 70: null
+|  age = 71: null
+|  age = 74: null
+|  age = 76: null
+|  age = 77: null
+serum cholestoral = 268
+|  age = 29: null
+|  age = 34: null
+|  age = 35: null
+|  age = 37: null
+|  age = 38: null
+|  age = 39: null
+|  age = 40: null
+|  age = 41: absence
+|  age = 42: null
+|  age = 43: null
+|  age = 44: null
+|  age = 45: null
+|  age = 46: null
+|  age = 47: null
+|  age = 48: null
+|  age = 49: null
+|  age = 50: null
+|  age = 51: null
+|  age = 52: null
+|  age = 53: null
+|  age = 54: null
+|  age = 55: null
+|  age = 56: null
+|  age = 57: null
+|  age = 58: null
+|  age = 59: null
+|  age = 60: null
+|  age = 61: null
+|  age = 62: presence
+|  age = 63: null
+|  age = 64: null
+|  age = 65: null
+|  age = 66: null
+|  age = 67: null
+|  age = 68: null
+|  age = 69: null
+|  age = 70: null
+|  age = 71: null
+|  age = 74: null
+|  age = 76: null
+|  age = 77: null
+serum cholestoral = 269
+|  age = 29: null
+|  age = 34: null
+|  age = 35: null
+|  age = 37: null
+|  age = 38: null
+|  age = 39: null
+|  age = 40: null
+|  age = 41: null
+|  age = 42: null
+|  age = 43: null
+|  age = 44: null
+|  age = 45: null
+|  age = 46: null
+|  age = 47: null
+|  age = 48: null
+|  age = 49: absence
+|  age = 50: null
+|  age = 51: null
+|  age = 52: null
+|  age = 53: null
+|  age = 54: null
+|  age = 55: null
+|  age = 56: null
+|  age = 57: null
+|  age = 58: null
+|  age = 59: null
+|  age = 60: null
+|  age = 61: null
+|  age = 62: null
+|  age = 63: presence
+|  age = 64: null
+|  age = 65: absence
+|  age = 66: null
+|  age = 67: null
+|  age = 68: null
+|  age = 69: null
+|  age = 70: presence
+|  age = 71: null
+|  age = 74: absence
+|  age = 76: null
+|  age = 77: null
+serum cholestoral = 270
+|  age = 29: null
+|  age = 34: null
+|  age = 35: null
+|  age = 37: null
+|  age = 38: null
+|  age = 39: null
+|  age = 40: null
+|  age = 41: null
+|  age = 42: null
+|  age = 43: null
+|  age = 44: null
+|  age = 45: null
+|  age = 46: null
+|  age = 47: null
+|  age = 48: null
+|  age = 49: null
+|  age = 50: null
+|  age = 51: null
+|  age = 52: null
+|  age = 53: null
+|  age = 54: null
+|  age = 55: null
+|  age = 56: null
+|  age = 57: null
+|  age = 58: presence
+|  age = 59: absence
+|  age = 60: null
+|  age = 61: null
+|  age = 62: null
+|  age = 63: null
+|  age = 64: null
+|  age = 65: null
+|  age = 66: null
+|  age = 67: null
+|  age = 68: null
+|  age = 69: null
+|  age = 70: null
+|  age = 71: null
+|  age = 74: null
+|  age = 76: null
+|  age = 77: null
+serum cholestoral = 271: absence
+serum cholestoral = 273
+|  age = 29: null
+|  age = 34: null
+|  age = 35: null
+|  age = 37: null
+|  age = 38: null
+|  age = 39: null
+|  age = 40: null
+|  age = 41: null
+|  age = 42: null
+|  age = 43: null
+|  age = 44: null
+|  age = 45: null
+|  age = 46: null
+|  age = 47: null
+|  age = 48: null
+|  age = 49: null
+|  age = 50: null
+|  age = 51: null
+|  age = 52: null
+|  age = 53: null
+|  age = 54: absence
+|  age = 55: null
+|  age = 56: null
+|  age = 57: null
+|  age = 58: null
+|  age = 59: presence
+|  age = 60: null
+|  age = 61: null
+|  age = 62: null
+|  age = 63: null
+|  age = 64: null
+|  age = 65: null
+|  age = 66: null
+|  age = 67: null
+|  age = 68: null
+|  age = 69: null
+|  age = 70: null
+|  age = 71: null
+|  age = 74: null
+|  age = 76: null
+|  age = 77: null
+serum cholestoral = 274: presence
+serum cholestoral = 275
+|  age = 29: null
+|  age = 34: null
+|  age = 35: null
+|  age = 37: null
+|  age = 38: null
+|  age = 39: null
+|  age = 40: null
+|  age = 41: null
+|  age = 42: null
+|  age = 43: null
+|  age = 44: null
+|  age = 45: null
+|  age = 46: null
+|  age = 47: presence
+|  age = 48: absence
+|  age = 49: null
+|  age = 50: null
+|  age = 51: null
+|  age = 52: null
+|  age = 53: null
+|  age = 54: null
+|  age = 55: null
+|  age = 56: null
+|  age = 57: null
+|  age = 58: null
+|  age = 59: null
+|  age = 60: null
+|  age = 61: null
+|  age = 62: null
+|  age = 63: null
+|  age = 64: null
+|  age = 65: null
+|  age = 66: null
+|  age = 67: null
+|  age = 68: null
+|  age = 69: null
+|  age = 70: null
+|  age = 71: null
+|  age = 74: null
+|  age = 76: null
+|  age = 77: null
+serum cholestoral = 276: presence
+serum cholestoral = 277: absence
+serum cholestoral = 281: presence
+serum cholestoral = 282: presence
+serum cholestoral = 283
+|  age = 29: null
+|  age = 34: null
+|  age = 35: null
+|  age = 37: null
+|  age = 38: null
+|  age = 39: null
+|  age = 40: null
+|  age = 41: null
+|  age = 42: null
+|  age = 43: null
+|  age = 44: null
+|  age = 45: null
+|  age = 46: null
+|  age = 47: null
+|  age = 48: null
+|  age = 49: null
+|  age = 50: null
+|  age = 51: null
+|  age = 52: null
+|  age = 53: null
+|  age = 54: presence
+|  age = 55: null
+|  age = 56: presence
+|  age = 57: null
+|  age = 58: absence
+|  age = 59: null
+|  age = 60: null
+|  age = 61: null
+|  age = 62: null
+|  age = 63: null
+|  age = 64: null
+|  age = 65: null
+|  age = 66: null
+|  age = 67: null
+|  age = 68: null
+|  age = 69: null
+|  age = 70: null
+|  age = 71: null
+|  age = 74: null
+|  age = 76: null
+|  age = 77: null
+serum cholestoral = 284: presence
+serum cholestoral = 286: presence
+serum cholestoral = 288
+|  age = 29: null
+|  age = 34: null
+|  age = 35: null
+|  age = 37: null
+|  age = 38: null
+|  age = 39: null
+|  age = 40: null
+|  age = 41: null
+|  age = 42: null
+|  age = 43: null
+|  age = 44: null
+|  age = 45: null
+|  age = 46: null
+|  age = 47: null
+|  age = 48: null
+|  age = 49: null
+|  age = 50: null
+|  age = 51: null
+|  age = 52: null
+|  age = 53: null
+|  age = 54: absence
+|  age = 55: null
+|  age = 56: presence
+|  age = 57: null
+|  age = 58: null
+|  age = 59: presence
+|  age = 60: null
+|  age = 61: null
+|  age = 62: null
+|  age = 63: null
+|  age = 64: null
+|  age = 65: null
+|  age = 66: null
+|  age = 67: null
+|  age = 68: null
+|  age = 69: null
+|  age = 70: null
+|  age = 71: null
+|  age = 74: null
+|  age = 76: null
+|  age = 77: null
+serum cholestoral = 289: presence
+serum cholestoral = 290: presence
+serum cholestoral = 293: presence
+serum cholestoral = 294
+|  age = 29: null
+|  age = 34: null
+|  age = 35: null
+|  age = 37: null
+|  age = 38: null
+|  age = 39: null
+|  age = 40: null
+|  age = 41: null
+|  age = 42: null
+|  age = 43: null
+|  age = 44: null
+|  age = 45: null
+|  age = 46: null
+|  age = 47: null
+|  age = 48: null
+|  age = 49: null
+|  age = 50: null
+|  age = 51: null
+|  age = 52: null
+|  age = 53: null
+|  age = 54: null
+|  age = 55: null
+|  age = 56: absence
+|  age = 57: null
+|  age = 58: null
+|  age = 59: null
+|  age = 60: null
+|  age = 61: null
+|  age = 62: presence
+|  age = 63: null
+|  age = 64: null
+|  age = 65: null
+|  age = 66: null
+|  age = 67: null
+|  age = 68: null
+|  age = 69: null
+|  age = 70: null
+|  age = 71: null
+|  age = 74: null
+|  age = 76: null
+|  age = 77: null
+serum cholestoral = 295: absence
+serum cholestoral = 298
+|  age = 29: null
+|  age = 34: null
+|  age = 35: null
+|  age = 37: null
+|  age = 38: null
+|  age = 39: null
+|  age = 40: null
+|  age = 41: null
+|  age = 42: null
+|  age = 43: null
+|  age = 44: null
+|  age = 45: null
+|  age = 46: null
+|  age = 47: null
+|  age = 48: null
+|  age = 49: null
+|  age = 50: null
+|  age = 51: presence
+|  age = 52: absence
+|  age = 53: null
+|  age = 54: null
+|  age = 55: null
+|  age = 56: null
+|  age = 57: null
+|  age = 58: null
+|  age = 59: null
+|  age = 60: null
+|  age = 61: null
+|  age = 62: null
+|  age = 63: null
+|  age = 64: null
+|  age = 65: null
+|  age = 66: null
+|  age = 67: null
+|  age = 68: null
+|  age = 69: null
+|  age = 70: null
+|  age = 71: null
+|  age = 74: null
+|  age = 76: null
+|  age = 77: null
+serum cholestoral = 299: presence
+serum cholestoral = 300: presence
+serum cholestoral = 302: absence
+serum cholestoral = 303: absence
+serum cholestoral = 304
+|  age = 29: null
+|  age = 34: null
+|  age = 35: null
+|  age = 37: null
+|  age = 38: null
+|  age = 39: null
+|  age = 40: null
+|  age = 41: null
+|  age = 42: null
+|  age = 43: null
+|  age = 44: null
+|  age = 45: null
+|  age = 46: null
+|  age = 47: null
+|  age = 48: null
+|  age = 49: null
+|  age = 50: null
+|  age = 51: null
+|  age = 52: null
+|  age = 53: null
+|  age = 54: absence
+|  age = 55: null
+|  age = 56: null
+|  age = 57: null
+|  age = 58: null
+|  age = 59: null
+|  age = 60: null
+|  age = 61: null
+|  age = 62: null
+|  age = 63: null
+|  age = 64: null
+|  age = 65: null
+|  age = 66: null
+|  age = 67: null
+|  age = 68: null
+|  age = 69: null
+|  age = 70: null
+|  age = 71: null
+|  age = 74: null
+|  age = 76: null
+|  age = 77: presence
+serum cholestoral = 305: presence
+serum cholestoral = 306: absence
+serum cholestoral = 307: presence
+serum cholestoral = 308: absence
+serum cholestoral = 309
+|  age = 29: null
+|  age = 34: null
+|  age = 35: null
+|  age = 37: null
+|  age = 38: null
+|  age = 39: null
+|  age = 40: null
+|  age = 41: null
+|  age = 42: null
+|  age = 43: null
+|  age = 44: null
+|  age = 45: presence
+|  age = 46: null
+|  age = 47: null
+|  age = 48: null
+|  age = 49: null
+|  age = 50: null
+|  age = 51: null
+|  age = 52: null
+|  age = 53: null
+|  age = 54: absence
+|  age = 55: null
+|  age = 56: null
+|  age = 57: null
+|  age = 58: null
+|  age = 59: null
+|  age = 60: null
+|  age = 61: null
+|  age = 62: null
+|  age = 63: null
+|  age = 64: presence
+|  age = 65: null
+|  age = 66: null
+|  age = 67: null
+|  age = 68: null
+|  age = 69: null
+|  age = 70: null
+|  age = 71: null
+|  age = 74: null
+|  age = 76: null
+|  age = 77: null
+serum cholestoral = 311: presence
+serum cholestoral = 313: absence
+serum cholestoral = 315
+|  age = 29: null
+|  age = 34: null
+|  age = 35: null
+|  age = 37: null
+|  age = 38: null
+|  age = 39: null
+|  age = 40: null
+|  age = 41: null
+|  age = 42: presence
+|  age = 43: absence
+|  age = 44: null
+|  age = 45: null
+|  age = 46: null
+|  age = 47: null
+|  age = 48: null
+|  age = 49: null
+|  age = 50: null
+|  age = 51: null
+|  age = 52: null
+|  age = 53: null
+|  age = 54: null
+|  age = 55: null
+|  age = 56: null
+|  age = 57: null
+|  age = 58: null
+|  age = 59: null
+|  age = 60: null
+|  age = 61: null
+|  age = 62: null
+|  age = 63: null
+|  age = 64: null
+|  age = 65: null
+|  age = 66: null
+|  age = 67: null
+|  age = 68: null
+|  age = 69: null
+|  age = 70: null
+|  age = 71: null
+|  age = 74: null
+|  age = 76: null
+|  age = 77: null
+serum cholestoral = 318: absence
+serum cholestoral = 319: presence
+serum cholestoral = 321: absence
+serum cholestoral = 322: presence
+serum cholestoral = 325: absence
+serum cholestoral = 326: presence
+serum cholestoral = 327: presence
+serum cholestoral = 330: presence
+serum cholestoral = 335: presence
+serum cholestoral = 340: absence
+serum cholestoral = 341: presence
+serum cholestoral = 353: presence
+serum cholestoral = 354: absence
+serum cholestoral = 360: absence
+serum cholestoral = 394: absence
+serum cholestoral = 407: presence
+serum cholestoral = 409: presence
+serum cholestoral = 417: absence
+serum cholestoral = 564: absence
+
+Time taken to build model: 0 seconds
+
+=== Predictions on test data ===
+
+    inst#     actual  predicted error prediction
+        1 1:presence          ?       ? 
+        2 1:presence          ?       ? 
+        3 1:presence 1:presence       1 
+        4 1:presence          ?       ? 
+        5 1:presence  2:absence   +   1 
+        6 1:presence 1:presence       1 
+        7 1:presence 1:presence       1 
+        8 1:presence 1:presence       1 
+        9 1:presence          ?       ? 
+       10 1:presence          ?       ? 
+       11 1:presence 1:presence       1 
+       12 1:presence 1:presence       1 
+       13  2:absence 1:presence   +   1 
+       14  2:absence          ?       ? 
+       15  2:absence  2:absence       1 
+       16  2:absence  2:absence       1 
+       17  2:absence          ?       ? 
+       18  2:absence          ?       ? 
+       19  2:absence          ?       ? 
+       20  2:absence          ?       ? 
+       21  2:absence          ?       ? 
+       22  2:absence  2:absence       1 
+       23  2:absence          ?       ? 
+       24  2:absence  2:absence       1 
+       25  2:absence  2:absence       1 
+       26  2:absence  2:absence       1 
+       27  2:absence          ?       ? 
+        1 1:presence 1:presence       1 
+        2 1:presence 1:presence       1 
+        3 1:presence  2:absence   +   1 
+        4 1:presence          ?       ? 
+        5 1:presence          ?       ? 
+        6 1:presence  2:absence   +   1 
+        7 1:presence          ?       ? 
+        8 1:presence          ?       ? 
+        9 1:presence          ?       ? 
+       10 1:presence          ?       ? 
+       11 1:presence          ?       ? 
+       12 1:presence 1:presence       1 
+       13  2:absence  2:absence       1 
+       14  2:absence  2:absence       1 
+       15  2:absence 1:presence   +   1 
+       16  2:absence 1:presence   +   1 
+       17  2:absence          ?       ? 
+       18  2:absence 1:presence   +   1 
+       19  2:absence  2:absence       1 
+       20  2:absence  2:absence       1 
+       21  2:absence 1:presence   +   1 
+       22  2:absence          ?       ? 
+       23  2:absence 1:presence   +   1 
+       24  2:absence  2:absence       1 
+       25  2:absence          ?       ? 
+       26  2:absence          ?       ? 
+       27  2:absence  2:absence       1 
+        1 1:presence          ?       ? 
+        2 1:presence          ?       ? 
+        3 1:presence 1:presence       1 
+        4 1:presence  2:absence   +   1 
+        5 1:presence 1:presence       1 
+        6 1:presence 1:presence       1 
+        7 1:presence  2:absence   +   1 
+        8 1:presence 1:presence       1 
+        9 1:presence  2:absence   +   1 
+       10 1:presence          ?       ? 
+       11 1:presence          ?       ? 
+       12 1:presence 1:presence       1 
+       13  2:absence          ?       ? 
+       14  2:absence          ?       ? 
+       15  2:absence          ?       ? 
+       16  2:absence          ?       ? 
+       17  2:absence  2:absence       1 
+       18  2:absence          ?       ? 
+       19  2:absence  2:absence       1 
+       20  2:absence  2:absence       1 
+       21  2:absence  2:absence       1 
+       22  2:absence          ?       ? 
+       23  2:absence  2:absence       1 
+       24  2:absence          ?       ? 
+       25  2:absence          ?       ? 
+       26  2:absence 1:presence   +   1 
+       27  2:absence 1:presence   +   1 
+        1 1:presence          ?       ? 
+        2 1:presence  2:absence   +   1 
+        3 1:presence  2:absence   +   1 
+        4 1:presence          ?       ? 
+        5 1:presence          ?       ? 
+        6 1:presence          ?       ? 
+        7 1:presence 1:presence       1 
+        8 1:presence          ?       ? 
+        9 1:presence 1:presence       1 
+       10 1:presence          ?       ? 
+       11 1:presence  2:absence   +   1 
+       12 1:presence  2:absence   +   1 
+       13  2:absence          ?       ? 
+       14  2:absence 1:presence   +   1 
+       15  2:absence          ?       ? 
+       16  2:absence  2:absence       1 
+       17  2:absence          ?       ? 
+       18  2:absence          ?       ? 
+       19  2:absence  2:absence       1 
+       20  2:absence          ?       ? 
+       21  2:absence  2:absence       1 
+       22  2:absence  2:absence       1 
+       23  2:absence          ?       ? 
+       24  2:absence          ?       ? 
+       25  2:absence  2:absence       1 
+       26  2:absence          ?       ? 
+       27  2:absence  2:absence       1 
+        1 1:presence 1:presence       1 
+        2 1:presence 1:presence       1 
+        3 1:presence  2:absence   +   1 
+        4 1:presence  2:absence   +   1 
+        5 1:presence  2:absence   +   1 
+        6 1:presence          ?       ? 
+        7 1:presence          ?       ? 
+        8 1:presence          ?       ? 
+        9 1:presence 1:presence       1 
+       10 1:presence          ?       ? 
+       11 1:presence          ?       ? 
+       12 1:presence  2:absence   +   1 
+       13  2:absence          ?       ? 
+       14  2:absence          ?       ? 
+       15  2:absence  2:absence       1 
+       16  2:absence          ?       ? 
+       17  2:absence 1:presence   +   1 
+       18  2:absence          ?       ? 
+       19  2:absence 1:presence   +   1 
+       20  2:absence 1:presence   +   1 
+       21  2:absence  2:absence       1 
+       22  2:absence 1:presence   +   1 
+       23  2:absence  2:absence       1 
+       24  2:absence  2:absence       1 
+       25  2:absence          ?       ? 
+       26  2:absence  2:absence       1 
+       27  2:absence  2:absence       1 
+        1 1:presence 1:presence       1 
+        2 1:presence  2:absence   +   1 
+        3 1:presence          ?       ? 
+        4 1:presence          ?       ? 
+        5 1:presence          ?       ? 
+        6 1:presence 1:presence       1 
+        7 1:presence          ?       ? 
+        8 1:presence  2:absence   +   1 
+        9 1:presence          ?       ? 
+       10 1:presence          ?       ? 
+       11 1:presence  2:absence   +   1 
+       12 1:presence 1:presence       1 
+       13  2:absence  2:absence       1 
+       14  2:absence  2:absence       1 
+       15  2:absence  2:absence       1 
+       16  2:absence  2:absence       1 
+       17  2:absence  2:absence       1 
+       18  2:absence 1:presence   +   1 
+       19  2:absence          ?       ? 
+       20  2:absence 1:presence   +   1 
+       21  2:absence 1:presence   +   1 
+       22  2:absence  2:absence       1 
+       23  2:absence  2:absence       1 
+       24  2:absence          ?       ? 
+       25  2:absence          ?       ? 
+       26  2:absence 1:presence   +   1 
+       27  2:absence  2:absence       1 
+        1 1:presence          ?       ? 
+        2 1:presence          ?       ? 
+        3 1:presence          ?       ? 
+        4 1:presence          ?       ? 
+        5 1:presence          ?       ? 
+        6 1:presence          ?       ? 
+        7 1:presence 1:presence       1 
+        8 1:presence          ?       ? 
+        9 1:presence          ?       ? 
+       10 1:presence          ?       ? 
+       11 1:presence          ?       ? 
+       12 1:presence          ?       ? 
+       13  2:absence 1:presence   +   1 
+       14  2:absence  2:absence       1 
+       15  2:absence          ?       ? 
+       16  2:absence  2:absence       1 
+       17  2:absence 1:presence   +   1 
+       18  2:absence  2:absence       1 
+       19  2:absence 1:presence   +   1 
+       20  2:absence  2:absence       1 
+       21  2:absence  2:absence       1 
+       22  2:absence          ?       ? 
+       23  2:absence  2:absence       1 
+       24  2:absence          ?       ? 
+       25  2:absence  2:absence       1 
+       26  2:absence  2:absence       1 
+       27  2:absence          ?       ? 
+        1 1:presence          ?       ? 
+        2 1:presence  2:absence   +   1 
+        3 1:presence  2:absence   +   1 
+        4 1:presence          ?       ? 
+        5 1:presence          ?       ? 
+        6 1:presence          ?       ? 
+        7 1:presence  2:absence   +   1 
+        8 1:presence  2:absence   +   1 
+        9 1:presence 1:presence       1 
+       10 1:presence          ?       ? 
+       11 1:presence 1:presence       1 
+       12 1:presence          ?       ? 
+       13  2:absence          ?       ? 
+       14  2:absence  2:absence       1 
+       15  2:absence          ?       ? 
+       16  2:absence 1:presence   +   1 
+       17  2:absence  2:absence       1 
+       18  2:absence          ?       ? 
+       19  2:absence 1:presence   +   1 
+       20  2:absence  2:absence       1 
+       21  2:absence          ?       ? 
+       22  2:absence 1:presence   +   1 
+       23  2:absence          ?       ? 
+       24  2:absence          ?       ? 
+       25  2:absence          ?       ? 
+       26  2:absence  2:absence       1 
+       27  2:absence  2:absence       1 
+        1 1:presence          ?       ? 
+        2 1:presence 1:presence       1 
+        3 1:presence          ?       ? 
+        4 1:presence          ?       ? 
+        5 1:presence  2:absence   +   1 
+        6 1:presence  2:absence   +   1 
+        7 1:presence  2:absence   +   1 
+        8 1:presence          ?       ? 
+        9 1:presence 1:presence       1 
+       10 1:presence 1:presence       1 
+       11 1:presence 1:presence       1 
+       12 1:presence          ?       ? 
+       13  2:absence 1:presence   +   1 
+       14  2:absence          ?       ? 
+       15  2:absence  2:absence       1 
+       16  2:absence  2:absence       1 
+       17  2:absence 1:presence   +   1 
+       18  2:absence          ?       ? 
+       19  2:absence  2:absence       1 
+       20  2:absence          ?       ? 
+       21  2:absence          ?       ? 
+       22  2:absence          ?       ? 
+       23  2:absence  2:absence       1 
+       24  2:absence 1:presence   +   1 
+       25  2:absence  2:absence       1 
+       26  2:absence          ?       ? 
+       27  2:absence  2:absence       1 
+        1 1:presence          ?       ? 
+        2 1:presence 1:presence       1 
+        3 1:presence 1:presence       1 
+        4 1:presence 1:presence       1 
+        5 1:presence          ?       ? 
+        6 1:presence          ?       ? 
+        7 1:presence          ?       ? 
+        8 1:presence          ?       ? 
+        9 1:presence          ?       ? 
+       10 1:presence          ?       ? 
+       11 1:presence          ?       ? 
+       12 1:presence 1:presence       1 
+       13  2:absence  2:absence       1 
+       14  2:absence  2:absence       1 
+       15  2:absence          ?       ? 
+       16  2:absence          ?       ? 
+       17  2:absence  2:absence       1 
+       18  2:absence          ?       ? 
+       19  2:absence          ?       ? 
+       20  2:absence          ?       ? 
+       21  2:absence  2:absence       1 
+       22  2:absence  2:absence       1 
+       23  2:absence          ?       ? 
+       24  2:absence  2:absence       1 
+       25  2:absence  2:absence       1 
+       26  2:absence 1:presence   +   1 
+       27  2:absence 1:presence   +   1 
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances          96               35.5556 %
+Incorrectly Classified Instances        52               19.2593 %
+Kappa statistic                          0.2677
+Mean absolute error                      0.3514
+Root mean squared error                  0.5927
+Relative absolute error                131.5256 %
+Root relative squared error            163.2957 %
+UnClassified Instances                 122               45.1852 %
+Total Number of Instances              270     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  Class
+                 0.579    0.308    0.541      0.579    0.559      presence
+                 0.692    0.421    0.724      0.692    0.708      absence
+Weighted Avg.    0.649    0.377    0.654      0.649    0.651      

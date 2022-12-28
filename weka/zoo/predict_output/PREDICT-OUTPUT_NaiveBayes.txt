@@ -1,0 +1,414 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.FilteredClassifier -F "weka.filters.MultiFilter -F \"weka.filters.unsupervised.attribute.StringToNominal -R 1\" -S -1155941787" -S 19126008 -W weka.classifiers.bayes.NaiveBayes
+Relation:     zoo
+Instances:    100
+Attributes:   18
+              animal-name
+              hair
+              feathers
+              eggs
+              milk
+              airborne
+              aquatic
+              predator
+              toothed
+              backbone
+              breathes
+              venomous
+              fins
+              legs
+              tail
+              domestic
+              catsize
+              class
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+FilteredClassifier using weka.classifiers.bayes.NaiveBayes  on data filtered through weka.filters.MultiFilter -F "weka.filters.unsupervised.attribute.StringToNominal -R 1" -S -1155941787
+
+Filtered Header
+@relation 'zoo-weka.filters.unsupervised.attribute.StringToNominal-R1-weka.filters.MultiFilter-Fweka.filters.unsupervised.attribute.StringToNominal -R 1-S-1155941787'
+
+@attribute animal-name {aardvark,antelope,bass,bear,boar,buffalo,calf,carp,catfish,cavy,cheetah,chicken,chub,clam,crab,crayfish,crow,deer,dogfish,dolphin,dove,duck,elephant,flamingo,flea,frog_1,frog_2,fruitbat,giraffe,gnat,goat,gorilla,gull,haddock,hamster,hare,hawk,herring,honeybee,housefly,kiwi,ladybird,lark,leopard,lion,lobster,lynx,mink,mole,mongoose,moth,newt,octopus,opossum,oryx,ostrich,parakeet,penguin,pheasant,pike,piranha,pitviper,platypus,polecat,pony,porpoise,puma,pussycat,raccoon,reindeer,rhea,scorpion,seahorse,seal,sealion,seasnake,seawasp,skimmer,skua,slowworm,slug,sole,sparrow,squirrel,starfish,stingray,swan,termite,toad,tortoise,tuatara,tuna,vampire,vole,vulture,wallaby,wasp,wolf,worm,wren}
+@attribute hair {yes,no}
+@attribute feathers {yes,no}
+@attribute eggs {yes,no}
+@attribute milk {yes,no}
+@attribute airborne {yes,no}
+@attribute aquatic {yes,no}
+@attribute predator {yes,no}
+@attribute toothed {yes,no}
+@attribute backbone {yes,no}
+@attribute breathes {yes,no}
+@attribute venomous {yes,no}
+@attribute fins {yes,no}
+@attribute legs {0,2,4,5,6,8}
+@attribute tail {yes,no}
+@attribute domestic {yes,no}
+@attribute catsize {yes,no}
+@attribute class {Mammal,Bird,Reptile,Fish,Amphibian,Bug,Invertebrate}
+
+@data
+
+
+Classifier Model
+Naive Bayes Classifier
+
+                      Class
+Attribute            Mammal         Bird      Reptile         Fish    Amphibian          Bug Invertebrate
+                     (0.38)        (0.2)       (0.06)       (0.13)       (0.05)       (0.08)        (0.1)
+==========================================================================================================
+animal-name
+  aardvark               2.0          1.0          1.0          1.0          1.0          1.0          1.0
+  antelope               2.0          1.0          1.0          1.0          1.0          1.0          1.0
+  bass                   1.0          1.0          1.0          2.0          1.0          1.0          1.0
+  bear                   2.0          1.0          1.0          1.0          1.0          1.0          1.0
+  boar                   2.0          1.0          1.0          1.0          1.0          1.0          1.0
+  buffalo                2.0          1.0          1.0          1.0          1.0          1.0          1.0
+  calf                   2.0          1.0          1.0          1.0          1.0          1.0          1.0
+  carp                   1.0          1.0          1.0          2.0          1.0          1.0          1.0
+  catfish                1.0          1.0          1.0          2.0          1.0          1.0          1.0
+  cavy                   2.0          1.0          1.0          1.0          1.0          1.0          1.0
+  cheetah                2.0          1.0          1.0          1.0          1.0          1.0          1.0
+  chicken                1.0          2.0          1.0          1.0          1.0          1.0          1.0
+  chub                   1.0          1.0          1.0          2.0          1.0          1.0          1.0
+  clam                   1.0          1.0          1.0          1.0          1.0          1.0          2.0
+  crab                   1.0          1.0          1.0          1.0          1.0          1.0          2.0
+  crayfish               1.0          1.0          1.0          1.0          1.0          1.0          2.0
+  crow                   1.0          2.0          1.0          1.0          1.0          1.0          1.0
+  deer                   2.0          1.0          1.0          1.0          1.0          1.0          1.0
+  dogfish                1.0          1.0          1.0          2.0          1.0          1.0          1.0
+  dolphin                2.0          1.0          1.0          1.0          1.0          1.0          1.0
+  dove                   1.0          2.0          1.0          1.0          1.0          1.0          1.0
+  duck                   1.0          2.0          1.0          1.0          1.0          1.0          1.0
+  elephant               2.0          1.0          1.0          1.0          1.0          1.0          1.0
+  flamingo               1.0          2.0          1.0          1.0          1.0          1.0          1.0
+  flea                   1.0          1.0          1.0          1.0          1.0          2.0          1.0
+  frog_1                 1.0          1.0          1.0          1.0          2.0          1.0          1.0
+  frog_2                 1.0          1.0          1.0          1.0          2.0          1.0          1.0
+  fruitbat               2.0          1.0          1.0          1.0          1.0          1.0          1.0
+  giraffe                2.0          1.0          1.0          1.0          1.0          1.0          1.0
+  gnat                   1.0          1.0          1.0          1.0          1.0          2.0          1.0
+  goat                   2.0          1.0          1.0          1.0          1.0          1.0          1.0
+  gorilla                2.0          1.0          1.0          1.0          1.0          1.0          1.0
+  gull                   1.0          2.0          1.0          1.0          1.0          1.0          1.0
+  haddock                1.0          1.0          1.0          2.0          1.0          1.0          1.0
+  hamster                2.0          1.0          1.0          1.0          1.0          1.0          1.0
+  hare                   2.0          1.0          1.0          1.0          1.0          1.0          1.0
+  hawk                   1.0          2.0          1.0          1.0          1.0          1.0          1.0
+  herring                1.0          1.0          1.0          2.0          1.0          1.0          1.0
+  honeybee               1.0          1.0          1.0          1.0          1.0          2.0          1.0
+  housefly               1.0          1.0          1.0          1.0          1.0          2.0          1.0
+  kiwi                   1.0          2.0          1.0          1.0          1.0          1.0          1.0
+  ladybird               1.0          1.0          1.0          1.0          1.0          2.0          1.0
+  lark                   1.0          2.0          1.0          1.0          1.0          1.0          1.0
+  leopard                2.0          1.0          1.0          1.0          1.0          1.0          1.0
+  lion                   2.0          1.0          1.0          1.0          1.0          1.0          1.0
+  lobster                1.0          1.0          1.0          1.0          1.0          1.0          2.0
+  lynx                   2.0          1.0          1.0          1.0          1.0          1.0          1.0
+  mink                   2.0          1.0          1.0          1.0          1.0          1.0          1.0
+  mole                   2.0          1.0          1.0          1.0          1.0          1.0          1.0
+  mongoose               2.0          1.0          1.0          1.0          1.0          1.0          1.0
+  moth                   1.0          1.0          1.0          1.0          1.0          2.0          1.0
+  newt                   1.0          1.0          1.0          1.0          2.0          1.0          1.0
+  octopus                1.0          1.0          1.0          1.0          1.0          1.0          2.0
+  opossum                2.0          1.0          1.0          1.0          1.0          1.0          1.0
+  oryx                   2.0          1.0          1.0          1.0          1.0          1.0          1.0
+  ostrich                1.0          2.0          1.0          1.0          1.0          1.0          1.0
+  parakeet               1.0          2.0          1.0          1.0          1.0          1.0          1.0
+  penguin                1.0          2.0          1.0          1.0          1.0          1.0          1.0
+  pheasant               1.0          2.0          1.0          1.0          1.0          1.0          1.0
+  pike                   1.0          1.0          1.0          2.0          1.0          1.0          1.0
+  piranha                1.0          1.0          1.0          2.0          1.0          1.0          1.0
+  pitviper               1.0          1.0          2.0          1.0          1.0          1.0          1.0
+  platypus               2.0          1.0          1.0          1.0          1.0          1.0          1.0
+  polecat                2.0          1.0          1.0          1.0          1.0          1.0          1.0
+  pony                   2.0          1.0          1.0          1.0          1.0          1.0          1.0
+  porpoise               2.0          1.0          1.0          1.0          1.0          1.0          1.0
+  puma                   2.0          1.0          1.0          1.0          1.0          1.0          1.0
+  pussycat               2.0          1.0          1.0          1.0          1.0          1.0          1.0
+  raccoon                2.0          1.0          1.0          1.0          1.0          1.0          1.0
+  reindeer               2.0          1.0          1.0          1.0          1.0          1.0          1.0
+  rhea                   1.0          2.0          1.0          1.0          1.0          1.0          1.0
+  scorpion               1.0          1.0          1.0          1.0          1.0          1.0          2.0
+  seahorse               1.0          1.0          1.0          2.0          1.0          1.0          1.0
+  seal                   2.0          1.0          1.0          1.0          1.0          1.0          1.0
+  sealion                2.0          1.0          1.0          1.0          1.0          1.0          1.0
+  seasnake               1.0          1.0          2.0          1.0          1.0          1.0          1.0
+  seawasp                1.0          1.0          1.0          1.0          1.0          1.0          2.0
+  skimmer                1.0          2.0          1.0          1.0          1.0          1.0          1.0
+  skua                   1.0          2.0          1.0          1.0          1.0          1.0          1.0
+  slowworm               1.0          1.0          2.0          1.0          1.0          1.0          1.0
+  slug                   1.0          1.0          1.0          1.0          1.0          1.0          2.0
+  sole                   1.0          1.0          1.0          2.0          1.0          1.0          1.0
+  sparrow                1.0          2.0          1.0          1.0          1.0          1.0          1.0
+  squirrel               2.0          1.0          1.0          1.0          1.0          1.0          1.0
+  starfish               1.0          1.0          1.0          1.0          1.0          1.0          2.0
+  stingray               1.0          1.0          1.0          2.0          1.0          1.0          1.0
+  swan                   1.0          2.0          1.0          1.0          1.0          1.0          1.0
+  termite                1.0          1.0          1.0          1.0          1.0          2.0          1.0
+  toad                   1.0          1.0          1.0          1.0          2.0          1.0          1.0
+  tortoise               1.0          1.0          2.0          1.0          1.0          1.0          1.0
+  tuatara                1.0          1.0          2.0          1.0          1.0          1.0          1.0
+  tuna                   1.0          1.0          1.0          2.0          1.0          1.0          1.0
+  vampire                2.0          1.0          1.0          1.0          1.0          1.0          1.0
+  vole                   2.0          1.0          1.0          1.0          1.0          1.0          1.0
+  vulture                1.0          2.0          1.0          1.0          1.0          1.0          1.0
+  wallaby                2.0          1.0          1.0          1.0          1.0          1.0          1.0
+  wasp                   1.0          1.0          1.0          1.0          1.0          2.0          1.0
+  wolf                   2.0          1.0          1.0          1.0          1.0          1.0          1.0
+  worm                   1.0          1.0          1.0          1.0          1.0          1.0          2.0
+  wren                   1.0          2.0          1.0          1.0          1.0          1.0          1.0
+  [total]              140.0        120.0        105.0        113.0        104.0        108.0        110.0
+
+hair
+  yes                   39.0          1.0          1.0          1.0          1.0          5.0          1.0
+  no                     3.0         21.0          6.0         14.0          5.0          5.0         11.0
+  [total]               42.0         22.0          7.0         15.0          6.0         10.0         12.0
+
+feathers
+  yes                    1.0         21.0          1.0          1.0          1.0          1.0          1.0
+  no                    41.0          1.0          6.0         14.0          5.0          9.0         11.0
+  [total]               42.0         22.0          7.0         15.0          6.0         10.0         12.0
+
+eggs
+  yes                    2.0         21.0          5.0         14.0          5.0          9.0         10.0
+  no                    40.0          1.0          2.0          1.0          1.0          1.0          2.0
+  [total]               42.0         22.0          7.0         15.0          6.0         10.0         12.0
+
+milk
+  yes                   41.0          1.0          1.0          1.0          1.0          1.0          1.0
+  no                     1.0         21.0          6.0         14.0          5.0          9.0         11.0
+  [total]               42.0         22.0          7.0         15.0          6.0         10.0         12.0
+
+airborne
+  yes                    3.0         17.0          1.0          1.0          1.0          7.0          1.0
+  no                    39.0          5.0          6.0         14.0          5.0          3.0         11.0
+  [total]               42.0         22.0          7.0         15.0          6.0         10.0         12.0
+
+aquatic
+  yes                    7.0          7.0          2.0         14.0          5.0          1.0          7.0
+  no                    35.0         15.0          5.0          1.0          1.0          9.0          5.0
+  [total]               42.0         22.0          7.0         15.0          6.0         10.0         12.0
+
+predator
+  yes                   22.0         10.0          5.0         10.0          4.0          2.0          9.0
+  no                    20.0         12.0          2.0          5.0          2.0          8.0          3.0
+  [total]               42.0         22.0          7.0         15.0          6.0         10.0         12.0
+
+toothed
+  yes                   40.0          1.0          5.0         14.0          5.0          1.0          1.0
+  no                     2.0         21.0          2.0          1.0          1.0          9.0         11.0
+  [total]               42.0         22.0          7.0         15.0          6.0         10.0         12.0
+
+backbone
+  yes                   41.0         21.0          6.0         14.0          5.0          1.0          1.0
+  no                     1.0          1.0          1.0          1.0          1.0          9.0         11.0
+  [total]               42.0         22.0          7.0         15.0          6.0         10.0         12.0
+
+breathes
+  yes                   41.0         21.0          5.0          1.0          5.0          9.0          4.0
+  no                     1.0          1.0          2.0         14.0          1.0          1.0          8.0
+  [total]               42.0         22.0          7.0         15.0          6.0         10.0         12.0
+
+venomous
+  yes                    1.0          1.0          3.0          2.0          2.0          3.0          3.0
+  no                    41.0         21.0          4.0         13.0          4.0          7.0          9.0
+  [total]               42.0         22.0          7.0         15.0          6.0         10.0         12.0
+
+fins
+  yes                    5.0          1.0          1.0         14.0          1.0          1.0          1.0
+  no                    37.0         21.0          6.0          1.0          5.0          9.0         11.0
+  [total]               42.0         22.0          7.0         15.0          6.0         10.0         12.0
+
+legs
+  0                      4.0          1.0          4.0         14.0          1.0          1.0          5.0
+  2                      7.0         21.0          1.0          1.0          1.0          1.0          1.0
+  4                     32.0          1.0          3.0          1.0          5.0          1.0          2.0
+  5                      1.0          1.0          1.0          1.0          1.0          1.0          2.0
+  6                      1.0          1.0          1.0          1.0          1.0          9.0          3.0
+  8                      1.0          1.0          1.0          1.0          1.0          1.0          3.0
+  [total]               46.0         26.0         11.0         19.0         10.0         14.0         16.0
+
+tail
+  yes                   36.0         21.0          6.0         14.0          2.0          1.0          2.0
+  no                     6.0          1.0          1.0          1.0          4.0          9.0         10.0
+  [total]               42.0         22.0          7.0         15.0          6.0         10.0         12.0
+
+domestic
+  yes                    8.0          4.0          1.0          2.0          1.0          2.0          1.0
+  no                    34.0         18.0          6.0         13.0          5.0          8.0         11.0
+  [total]               42.0         22.0          7.0         15.0          6.0         10.0         12.0
+
+catsize
+  yes                   32.0          7.0          2.0          5.0          1.0          1.0          2.0
+  no                    10.0         15.0          5.0         10.0          5.0          9.0         10.0
+  [total]               42.0         22.0          7.0         15.0          6.0         10.0         12.0
+
+
+
+Time taken to build model: 0 seconds
+
+=== Predictions on test data ===
+
+    inst#     actual  predicted error prediction
+        1   1:Mammal     4:Fish   +   0.476 
+        2   1:Mammal   1:Mammal       0.999 
+        3   1:Mammal   1:Mammal       1 
+        4   1:Mammal   1:Mammal       1 
+        5  3:Reptile     2:Bird   +   0.533 
+        6 7:Invertebrate      6:Bug   +   0.645 
+        7     2:Bird     2:Bird       1 
+        8     2:Bird     2:Bird       0.999 
+        9      6:Bug      6:Bug       1 
+       10     4:Fish     4:Fish       0.999 
+        1   1:Mammal   1:Mammal       1 
+        2   1:Mammal   1:Mammal       1 
+        3   1:Mammal   1:Mammal       1 
+        4   1:Mammal   1:Mammal       1 
+        5  3:Reptile     4:Fish   +   0.796 
+        6 7:Invertebrate 7:Invertebrate       0.987 
+        7     2:Bird     2:Bird       1 
+        8     2:Bird     2:Bird       1 
+        9      6:Bug      6:Bug       0.999 
+       10     4:Fish     4:Fish       0.999 
+        1   1:Mammal   1:Mammal       0.466 
+        2   1:Mammal   1:Mammal       1 
+        3   1:Mammal   1:Mammal       1 
+        4   1:Mammal   1:Mammal       1 
+        5  3:Reptile  3:Reptile       0.912 
+        6 7:Invertebrate 7:Invertebrate       0.995 
+        7     2:Bird     2:Bird       1 
+        8     2:Bird     2:Bird       1 
+        9      6:Bug      6:Bug       0.877 
+       10     4:Fish     4:Fish       0.997 
+        1   1:Mammal   1:Mammal       1 
+        2   1:Mammal   1:Mammal       0.991 
+        3   1:Mammal   1:Mammal       1 
+        4   1:Mammal   1:Mammal       1 
+        5  3:Reptile  3:Reptile       0.542 
+        6 7:Invertebrate 7:Invertebrate       0.993 
+        7     2:Bird     2:Bird       1 
+        8     2:Bird     2:Bird       0.999 
+        9     4:Fish     4:Fish       0.999 
+       10     4:Fish     4:Fish       0.999 
+        1   1:Mammal   1:Mammal       1 
+        2   1:Mammal   1:Mammal       1 
+        3   1:Mammal   1:Mammal       1 
+        4   1:Mammal   1:Mammal       1 
+        5  3:Reptile  3:Reptile       0.864 
+        6 7:Invertebrate  3:Reptile   +   0.757 
+        7     2:Bird     2:Bird       1 
+        8     2:Bird     2:Bird       1 
+        9     4:Fish     4:Fish       0.999 
+       10     4:Fish     4:Fish       0.999 
+        1   1:Mammal   1:Mammal       1 
+        2   1:Mammal   1:Mammal       1 
+        3   1:Mammal   1:Mammal       1 
+        4   1:Mammal   1:Mammal       1 
+        5 7:Invertebrate 7:Invertebrate       0.993 
+        6     2:Bird     2:Bird       0.997 
+        7     2:Bird     2:Bird       1 
+        8      6:Bug      6:Bug       0.842 
+        9     4:Fish     4:Fish       0.987 
+       10     4:Fish     4:Fish       0.998 
+        1   1:Mammal   1:Mammal       1 
+        2   1:Mammal   1:Mammal       1 
+        3   1:Mammal   1:Mammal       0.719 
+        4   1:Mammal   1:Mammal       1 
+        5 7:Invertebrate 7:Invertebrate       0.979 
+        6     2:Bird     2:Bird       1 
+        7     2:Bird     2:Bird       1 
+        8      6:Bug      6:Bug       0.999 
+        9     4:Fish     4:Fish       0.999 
+       10 5:Amphibian 5:Amphibian       0.823 
+        1   1:Mammal   1:Mammal       1 
+        2   1:Mammal   1:Mammal       1 
+        3   1:Mammal   1:Mammal       1 
+        4   1:Mammal   1:Mammal       0.999 
+        5 7:Invertebrate 7:Invertebrate       0.993 
+        6     2:Bird     2:Bird       0.996 
+        7     2:Bird     2:Bird       1 
+        8      6:Bug      6:Bug       0.763 
+        9     4:Fish     4:Fish       0.999 
+       10 5:Amphibian 5:Amphibian       0.884 
+        1   1:Mammal   1:Mammal       1 
+        2   1:Mammal   1:Mammal       1 
+        3   1:Mammal   1:Mammal       0.999 
+        4   1:Mammal   1:Mammal       1 
+        5 7:Invertebrate 7:Invertebrate       0.994 
+        6     2:Bird     2:Bird       1 
+        7     2:Bird     2:Bird       1 
+        8      6:Bug      6:Bug       0.989 
+        9     4:Fish     4:Fish       0.999 
+       10 5:Amphibian  3:Reptile   +   0.603 
+        1   1:Mammal   1:Mammal       1 
+        2   1:Mammal   1:Mammal       1 
+        3   1:Mammal   1:Mammal       1 
+        4   1:Mammal   1:Mammal       1 
+        5 7:Invertebrate      6:Bug   +   0.605 
+        6     2:Bird     2:Bird       1 
+        7     2:Bird     2:Bird       1 
+        8      6:Bug      6:Bug       1 
+        9     4:Fish     4:Fish       0.999 
+       10 5:Amphibian 5:Amphibian       0.903 
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances          93               93      %
+Incorrectly Classified Instances         7                7      %
+Kappa statistic                          0.9084
+Mean absolute error                      0.0217
+Root mean squared error                  0.1069
+Relative absolute error                  9.8655 %
+Root relative squared error             32.3496 %
+Total Number of Instances              100     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  Class
+                 0.975    0.000    1.000      0.975    0.987      Mammal
+                 1.000    0.013    0.952      1.000    0.976      Bird
+                 0.600    0.021    0.600      0.600    0.600      Reptile
+                 1.000    0.023    0.867      1.000    0.929      Fish
+                 0.750    0.000    1.000      0.750    0.857      Amphibian
+                 1.000    0.022    0.800      1.000    0.889      Bug
+                 0.700    0.000    1.000      0.700    0.824      Invertebrate
+Weighted Avg.    0.930    0.008    0.937      0.930    0.929      
+
+
+=== Re-evaluation on test set ===
+
+User supplied test set
+Relation:     zoo_prediction
+Instances:     unknown (yet). Reading incrementally
+Attributes:   18
+
+=== Predictions on user test set ===
+
+    inst#     actual  predicted error prediction
+        1        1:?   1:Mammal       1 
+        2        1:?     2:Bird       1 
+        3        1:?  3:Reptile       0.974 
+        4        1:?     4:Fish       0.999 
+        5        1:? 5:Amphibian       0.732 
+
+=== Summary ===
+
+Total Number of Instances                0     
+Ignored Class Unknown Instances                  5     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  Class
+                 ?        ?        ?          ?        ?          Mammal
+                 ?        ?        ?          ?        ?          Bird
+                 ?        ?        ?          ?        ?          Reptile
+                 ?        ?        ?          ?        ?          Fish
+                 ?        ?        ?          ?        ?          Amphibian
+                 ?        ?        ?          ?        ?          Bug
+                 ?        ?        ?          ?        ?          Invertebrate
+Weighted Avg.    ?        ?        ?          ?        ?          
