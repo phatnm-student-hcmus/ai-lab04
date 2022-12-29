@@ -1,0 +1,151 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.FilteredClassifier -F "weka.filters.supervised.attribute.Discretize -R first-last -precision 6" -S 19126008 -W weka.classifiers.bayes.NaiveBayes
+Relation:     heart
+Instances:    270
+Attributes:   14
+              age
+              sex
+              chest pain type
+              resting blood pressure
+              serum cholestoral
+              fasting blood sugar
+              resting electrocardiographic
+              maximum heart rate
+              exercise induced angina
+              oldpeak
+              the slope
+              major vessels colored
+              thal
+              class
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+FilteredClassifier using weka.classifiers.bayes.NaiveBayes  on data filtered through weka.filters.supervised.attribute.Discretize -R first-last -precision 6
+
+Filtered Header
+@relation heart-weka.filters.supervised.attribute.Discretize-Rfirst-last-precision6
+
+@attribute age {'\'(-inf-54.5]\'','\'(54.5-inf)\''}
+@attribute sex {male,female}
+@attribute 'chest pain type' {type-4,type-3,type-2,type-1}
+@attribute 'resting blood pressure' {'\'All\''}
+@attribute 'serum cholestoral' {'\'All\''}
+@attribute 'fasting blood sugar' {less,more}
+@attribute 'resting electrocardiographic' {type-2,type-0,type-1}
+@attribute 'maximum heart rate' {'\'(-inf-147.5]\'','\'(147.5-inf)\''}
+@attribute 'exercise induced angina' {no,yes}
+@attribute oldpeak {'\'(-inf-1.7]\'','\'(1.7-inf)\''}
+@attribute 'the slope' {type-2,type-1,type-3}
+@attribute 'major vessels colored' {'\'(-inf-0.5]\'','\'(0.5-inf)\''}
+@attribute thal {normal,'reversable defect',fixed-defect}
+@attribute class {presence,absence}
+
+@data
+
+
+Classifier Model
+Naive Bayes Classifier
+
+                                  Class
+Attribute                      presence  absence
+                                 (0.44)   (0.56)
+=================================================
+age
+  '(-inf-54.5]'                     41.0     93.0
+  '(54.5-inf)'                      81.0     59.0
+  [total]                          122.0    152.0
+
+sex
+  male                             101.0     84.0
+  female                            21.0     68.0
+  [total]                          122.0    152.0
+
+chest pain type
+  type-4                            92.0     39.0
+  type-3                            18.0     63.0
+  type-2                             8.0     36.0
+  type-1                             6.0     16.0
+  [total]                          124.0    154.0
+
+resting blood pressure
+  'All'                            121.0    151.0
+  [total]                          121.0    151.0
+
+serum cholestoral
+  'All'                            121.0    151.0
+  [total]                          121.0    151.0
+
+fasting blood sugar
+  less                             104.0    128.0
+  more                              18.0     24.0
+  [total]                          122.0    152.0
+
+resting electrocardiographic
+  type-2                            74.0     65.0
+  type-0                            47.0     86.0
+  type-1                             2.0      2.0
+  [total]                          123.0    153.0
+
+maximum heart rate
+  '(-inf-147.5]'                    77.0     36.0
+  '(147.5-inf)'                     45.0    116.0
+  [total]                          122.0    152.0
+
+exercise induced angina
+  no                                55.0    128.0
+  yes                               67.0     24.0
+  [total]                          122.0    152.0
+
+oldpeak
+  '(-inf-1.7]'                      68.0    137.0
+  '(1.7-inf)'                       54.0     15.0
+  [total]                          122.0    152.0
+
+the slope
+  type-2                            79.0     45.0
+  type-1                            33.0     99.0
+  type-3                            11.0      9.0
+  [total]                          123.0    153.0
+
+major vessels colored
+  '(-inf-0.5]'                      41.0    121.0
+  '(0.5-inf)'                       81.0     31.0
+  [total]                          122.0    152.0
+
+thal
+  normal                            34.0    120.0
+  reversable defect                 80.0     26.0
+  fixed-defect                       9.0      7.0
+  [total]                          123.0    153.0
+
+
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         222               82.2222 %
+Incorrectly Classified Instances        48               17.7778 %
+Kappa statistic                          0.6394
+Mean absolute error                      0.1964
+Root mean squared error                  0.3675
+Relative absolute error                 39.758  %
+Root relative squared error             73.968  %
+Total Number of Instances              270     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.792    0.153    0.805      0.792    0.798      0.639    0.903     0.890     presence
+                 0.847    0.208    0.836      0.847    0.841      0.639    0.903     0.912     absence
+Weighted Avg.    0.822    0.184    0.822      0.822    0.822      0.639    0.903     0.903     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+  95  25 |   a = presence
+  23 127 |   b = absence
+

@@ -1,0 +1,237 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.FilteredClassifier -F "weka.filters.supervised.attribute.Discretize -R first-last -precision 6" -S 1 -W weka.classifiers.trees.Id3
+Relation:     heart
+Instances:    270
+Attributes:   14
+              age
+              sex
+              chest pain type
+              resting blood pressure
+              serum cholestoral
+              fasting blood sugar
+              resting electrocardiographic
+              maximum heart rate
+              exercise induced angina
+              oldpeak
+              the slope
+              major vessels colored
+              thal
+              class
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+FilteredClassifier using weka.classifiers.trees.Id3  on data filtered through weka.filters.supervised.attribute.Discretize -R first-last -precision 6
+
+Filtered Header
+@relation heart-weka.filters.supervised.attribute.Discretize-Rfirst-last-precision6
+
+@attribute age {'\'(-inf-54.5]\'','\'(54.5-inf)\''}
+@attribute sex {male,female}
+@attribute 'chest pain type' {type-4,type-3,type-2,type-1}
+@attribute 'resting blood pressure' {'\'All\''}
+@attribute 'serum cholestoral' {'\'All\''}
+@attribute 'fasting blood sugar' {less,more}
+@attribute 'resting electrocardiographic' {type-2,type-0,type-1}
+@attribute 'maximum heart rate' {'\'(-inf-147.5]\'','\'(147.5-inf)\''}
+@attribute 'exercise induced angina' {no,yes}
+@attribute oldpeak {'\'(-inf-1.7]\'','\'(1.7-inf)\''}
+@attribute 'the slope' {type-2,type-1,type-3}
+@attribute 'major vessels colored' {'\'(-inf-0.5]\'','\'(0.5-inf)\''}
+@attribute thal {normal,'reversable defect',fixed-defect}
+@attribute class {presence,absence}
+
+@data
+
+
+Classifier Model
+Id3
+
+
+thal = normal
+|  chest pain type = type-4
+|  |  major vessels colored = '(-inf-0.5]'
+|  |  |  age = '(-inf-54.5]': absence
+|  |  |  age = '(54.5-inf)'
+|  |  |  |  resting electrocardiographic = type-2
+|  |  |  |  |  the slope = type-2: absence
+|  |  |  |  |  the slope = type-1
+|  |  |  |  |  |  sex = male: absence
+|  |  |  |  |  |  sex = female: presence
+|  |  |  |  |  the slope = type-3: null
+|  |  |  |  resting electrocardiographic = type-0
+|  |  |  |  |  the slope = type-2
+|  |  |  |  |  |  exercise induced angina = no
+|  |  |  |  |  |  |  sex = male: presence
+|  |  |  |  |  |  |  sex = female: absence
+|  |  |  |  |  |  exercise induced angina = yes: presence
+|  |  |  |  |  the slope = type-1: absence
+|  |  |  |  |  the slope = type-3: null
+|  |  |  |  resting electrocardiographic = type-1: presence
+|  |  major vessels colored = '(0.5-inf)'
+|  |  |  sex = male: presence
+|  |  |  sex = female
+|  |  |  |  the slope = type-2
+|  |  |  |  |  fasting blood sugar = less
+|  |  |  |  |  |  maximum heart rate = '(-inf-147.5]': absence
+|  |  |  |  |  |  maximum heart rate = '(147.5-inf)': presence
+|  |  |  |  |  fasting blood sugar = more: presence
+|  |  |  |  the slope = type-1: absence
+|  |  |  |  the slope = type-3: presence
+|  chest pain type = type-3
+|  |  sex = male
+|  |  |  fasting blood sugar = less
+|  |  |  |  age = '(-inf-54.5]'
+|  |  |  |  |  maximum heart rate = '(-inf-147.5]'
+|  |  |  |  |  |  resting electrocardiographic = type-2: presence
+|  |  |  |  |  |  resting electrocardiographic = type-0
+|  |  |  |  |  |  |  oldpeak = '(-inf-1.7]': absence
+|  |  |  |  |  |  |  oldpeak = '(1.7-inf)': presence
+|  |  |  |  |  |  resting electrocardiographic = type-1: null
+|  |  |  |  |  maximum heart rate = '(147.5-inf)'
+|  |  |  |  |  |  resting electrocardiographic = type-2: absence
+|  |  |  |  |  |  resting electrocardiographic = type-0
+|  |  |  |  |  |  |  oldpeak = '(-inf-1.7]'
+|  |  |  |  |  |  |  |  exercise induced angina = no: absence
+|  |  |  |  |  |  |  |  exercise induced angina = yes: absence
+|  |  |  |  |  |  |  oldpeak = '(1.7-inf)': absence
+|  |  |  |  |  |  resting electrocardiographic = type-1: null
+|  |  |  |  age = '(54.5-inf)'
+|  |  |  |  |  resting electrocardiographic = type-2: presence
+|  |  |  |  |  resting electrocardiographic = type-0: presence
+|  |  |  |  |  resting electrocardiographic = type-1: null
+|  |  |  fasting blood sugar = more: absence
+|  |  sex = female: absence
+|  chest pain type = type-2
+|  |  oldpeak = '(-inf-1.7]'
+|  |  |  fasting blood sugar = less: absence
+|  |  |  fasting blood sugar = more
+|  |  |  |  age = '(-inf-54.5]': absence
+|  |  |  |  age = '(54.5-inf)'
+|  |  |  |  |  sex = male: absence
+|  |  |  |  |  sex = female: presence
+|  |  oldpeak = '(1.7-inf)': presence
+|  chest pain type = type-1
+|  |  sex = male
+|  |  |  age = '(-inf-54.5]': absence
+|  |  |  age = '(54.5-inf)'
+|  |  |  |  exercise induced angina = no
+|  |  |  |  |  fasting blood sugar = less: presence
+|  |  |  |  |  fasting blood sugar = more
+|  |  |  |  |  |  maximum heart rate = '(-inf-147.5]': absence
+|  |  |  |  |  |  maximum heart rate = '(147.5-inf)': presence
+|  |  |  |  exercise induced angina = yes: absence
+|  |  sex = female: absence
+thal = reversable defect
+|  chest pain type = type-4
+|  |  oldpeak = '(-inf-1.7]'
+|  |  |  resting electrocardiographic = type-2
+|  |  |  |  the slope = type-2: presence
+|  |  |  |  the slope = type-1
+|  |  |  |  |  maximum heart rate = '(-inf-147.5]'
+|  |  |  |  |  |  age = '(-inf-54.5]'
+|  |  |  |  |  |  |  exercise induced angina = no: presence
+|  |  |  |  |  |  |  exercise induced angina = yes: absence
+|  |  |  |  |  |  age = '(54.5-inf)': presence
+|  |  |  |  |  maximum heart rate = '(147.5-inf)': presence
+|  |  |  |  the slope = type-3: presence
+|  |  |  resting electrocardiographic = type-0
+|  |  |  |  major vessels colored = '(-inf-0.5]'
+|  |  |  |  |  age = '(-inf-54.5]'
+|  |  |  |  |  |  maximum heart rate = '(-inf-147.5]': presence
+|  |  |  |  |  |  maximum heart rate = '(147.5-inf)'
+|  |  |  |  |  |  |  exercise induced angina = no: presence
+|  |  |  |  |  |  |  exercise induced angina = yes: presence
+|  |  |  |  |  age = '(54.5-inf)': absence
+|  |  |  |  major vessels colored = '(0.5-inf)'
+|  |  |  |  |  maximum heart rate = '(-inf-147.5]'
+|  |  |  |  |  |  fasting blood sugar = less
+|  |  |  |  |  |  |  age = '(-inf-54.5]': presence
+|  |  |  |  |  |  |  age = '(54.5-inf)'
+|  |  |  |  |  |  |  |  the slope = type-2: presence
+|  |  |  |  |  |  |  |  the slope = type-1: presence
+|  |  |  |  |  |  |  |  the slope = type-3: null
+|  |  |  |  |  |  fasting blood sugar = more: absence
+|  |  |  |  |  maximum heart rate = '(147.5-inf)': presence
+|  |  |  resting electrocardiographic = type-1: null
+|  |  oldpeak = '(1.7-inf)': presence
+|  chest pain type = type-3
+|  |  the slope = type-2
+|  |  |  major vessels colored = '(-inf-0.5]'
+|  |  |  |  exercise induced angina = no: absence
+|  |  |  |  exercise induced angina = yes
+|  |  |  |  |  fasting blood sugar = less
+|  |  |  |  |  |  resting electrocardiographic = type-2: absence
+|  |  |  |  |  |  resting electrocardiographic = type-0: presence
+|  |  |  |  |  |  resting electrocardiographic = type-1: null
+|  |  |  |  |  fasting blood sugar = more: presence
+|  |  |  major vessels colored = '(0.5-inf)'
+|  |  |  |  resting electrocardiographic = type-2: presence
+|  |  |  |  resting electrocardiographic = type-0
+|  |  |  |  |  age = '(-inf-54.5]': presence
+|  |  |  |  |  age = '(54.5-inf)'
+|  |  |  |  |  |  sex = male
+|  |  |  |  |  |  |  exercise induced angina = no: absence
+|  |  |  |  |  |  |  exercise induced angina = yes: presence
+|  |  |  |  |  |  sex = female: presence
+|  |  |  |  resting electrocardiographic = type-1: null
+|  |  the slope = type-1
+|  |  |  oldpeak = '(-inf-1.7]': absence
+|  |  |  oldpeak = '(1.7-inf)': presence
+|  |  the slope = type-3: absence
+|  chest pain type = type-2
+|  |  age = '(-inf-54.5]'
+|  |  |  resting electrocardiographic = type-2: presence
+|  |  |  resting electrocardiographic = type-0
+|  |  |  |  the slope = type-2: null
+|  |  |  |  the slope = type-1: absence
+|  |  |  |  the slope = type-3: presence
+|  |  |  resting electrocardiographic = type-1: null
+|  |  age = '(54.5-inf)': presence
+|  chest pain type = type-1
+|  |  the slope = type-2
+|  |  |  fasting blood sugar = less
+|  |  |  |  age = '(-inf-54.5]': presence
+|  |  |  |  age = '(54.5-inf)'
+|  |  |  |  |  oldpeak = '(-inf-1.7]': presence
+|  |  |  |  |  oldpeak = '(1.7-inf)': absence
+|  |  |  fasting blood sugar = more: absence
+|  |  the slope = type-1: absence
+|  |  the slope = type-3: absence
+thal = fixed-defect
+|  major vessels colored = '(-inf-0.5]'
+|  |  exercise induced angina = no: absence
+|  |  exercise induced angina = yes
+|  |  |  age = '(-inf-54.5]': presence
+|  |  |  age = '(54.5-inf)': absence
+|  major vessels colored = '(0.5-inf)': presence
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         207               76.6667 %
+Incorrectly Classified Instances        61               22.5926 %
+Kappa statistic                          0.5379
+Mean absolute error                      0.2417
+Root mean squared error                  0.4831
+Relative absolute error                 49.2739 %
+Root relative squared error             97.5116 %
+UnClassified Instances                   2                0.7407 %
+Total Number of Instances              270     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.725    0.189    0.757      0.725    0.740      0.538    0.761     0.663     presence
+                 0.811    0.275    0.784      0.811    0.797      0.538    0.754     0.733     absence
+Weighted Avg.    0.772    0.237    0.772      0.772    0.772      0.538    0.757     0.702     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+  87  33 |   a = presence
+  28 120 |   b = absence
+
